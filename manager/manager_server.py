@@ -1,4 +1,6 @@
 # requirements
+from lib.request_handlers import *
+from collections import Counter
 from termcolor import *
 import SocketServer
 import logging
@@ -9,6 +11,15 @@ import time
 LOG_DIRECTORY = "log/"
 LOG_FILE = LOG_DIRECTORY + str(time.strftime("%Y%m%d-%H%M-")) + "manager_server.log"
 logging.basicConfig(filename=LOG_FILE,level=logging.DEBUG)
+
+# available commands
+# this is a dictionary in which the keys are the available commands,
+# while the values are lists of available parameters for that command
+COMMANDS = {
+    "NewRemoteSIB" : ["SIBID", "owner"],
+    "NewVirtualMultiSIB": [],
+    "Discovery" : []
+    }
 
 # classes
 class ManagerServer(SocketServer.ThreadingTCPServer):
@@ -27,12 +38,51 @@ class ManagerServerHandler(SocketServer.BaseRequestHandler):
             
             # Decode the request
             if data.has_key("command"):
-                # debug print
-                print colored("Manager> ", "blue", attrs=["bold"]) + "received the command " + colored(data["command"], "cyan", attrs=['bold'])
-                self.server.logger.info(" Received the command " + str(data))
+                
+                if data["command"] in COMMANDS.keys():
+                    # debug print
+                    print colored("Manager> ", "blue", attrs=["bold"]) + "received the command " + colored(data["command"], "cyan", attrs=['bold'])
+                    self.server.logger.info(" Received the command " + str(data))
 
-                # send a reply
-                self.request.sendall(json.dumps({'return':'ok'}))
+                    # check the number of arguments
+                    if len(data.keys())-1 == len(COMMANDS[data["command"]]):
+
+                        # check the arguments
+                        cd = data.keys()
+                        cd.remove("command")
+                        if Counter(cd) == Counter(COMMANDS[data["command"]]):
+
+                            # decode 
+                            print colored("Manager> ", "blue", attrs=["bold"]) + "calling the proper method"
+                            globals()[data["command"]]()
+                    
+                            # send a reply
+                            self.request.sendall(json.dumps({'return':'ok'}))
+                            
+                        else:
+
+                            # debug print
+                            print colored("Manager> ", "red", attrs=["bold"]) + "wrong arguments"
+                            self.server.logger.info(" Wrong arguments, skipping message...")
+
+                            # send a reply
+                            self.request.sendall(json.dumps({'return':'fail', 'cause':'wrong arguments'}))                                                
+
+                    else:
+                        # debug print
+                        print colored("Manager> ", "red", attrs=["bold"]) + "wrong number of arguments"
+                        self.server.logger.info(" Wrong number of arguments, skipping message...")
+
+                        # send a reply
+                        self.request.sendall(json.dumps({'return':'fail', 'cause':'wrong number of arguments'}))                    
+
+                else:
+                    # debug print
+                    print colored("Manager> ", "red", attrs=["bold"]) + "invalid command! Skipping message..."
+                    self.server.logger.info(" Invalid command, skipping message...")
+
+                    # send a reply
+                    self.request.sendall(json.dumps({'return':'fail', 'cause':'invalid command'}))
                 
             else:
                 # debug print
@@ -40,7 +90,7 @@ class ManagerServerHandler(SocketServer.BaseRequestHandler):
                 self.server.logger.info(" No command supplied, skipping message")
 
                 # send a reply
-                self.request.sendall(json.dumps({'return':'fail'}))
+                self.request.sendall(json.dumps({'return':'fail', 'cause':'no command supplied'}))
 
         except Exception, e:
             print colored("Manager> ", "red", attrs=["bold"]) + "Exception while receiving message: " + str(e)
