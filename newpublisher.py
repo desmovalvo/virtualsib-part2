@@ -22,7 +22,7 @@ manager.settimeout(2)
      
 # connect to the manager
 try :
-    manager.connect((manager_host, manager_port))
+    manager.connect(("127.0.0.1", 17714))
 except :
     print colored("newpublisher> ", "red", attrs=['bold']) + 'Unable to connect to the manager'
     sys.exit()    
@@ -30,7 +30,7 @@ except :
 print colored("newtpublisher> ", "blue", attrs=['bold']) + 'Connected to the manager. Sending register request!'
 
 # build request message 
-register_msg = {"command":"NewRemoteSib", "sibID":sib_id, "owner":owner}
+register_msg = {"command":"NewRemoteSIB", "sibID":sib_id, "owner":owner}
 # print register_msg
 # print type(register_msg)
 

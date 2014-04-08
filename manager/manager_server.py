@@ -16,7 +16,7 @@ logging.basicConfig(filename=LOG_FILE,level=logging.DEBUG)
 # this is a dictionary in which the keys are the available commands,
 # while the values are lists of available parameters for that command
 COMMANDS = {
-    "NewRemoteSIB" : ["SIBID", "owner"],
+    "NewRemoteSIB" : ["sibID", "owner"],
     "NewVirtualMultiSIB": [],
     "Discovery" : []
     }
@@ -110,9 +110,9 @@ if __name__=='__main__':
         logger = logging.getLogger("manager_server")
         
         # Start the manager server
-        server = ManagerServer(('127.0.0.1', 13373), ManagerServerHandler)
+        server = ManagerServer(('127.0.0.1', 17714), ManagerServerHandler)
         server.logger = logger
-        server.logger.info(" Starting server on IP 127.0.0.1, Port 13373")
+        server.logger.info(" Starting server on IP 127.0.0.1, Port 17714")
         server.serve_forever()
         
     except KeyboardInterrupt:
