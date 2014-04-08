@@ -1,0 +1,12 @@
+INFO:root:Server waiting for KPs on port 10010
+INFO:root:Server waiting for publishers on port 10011
+INFO:root:Incoming connection from ('127.0.0.1', 34821)
+INFO:root:Received the following  message from ('127.0.0.1', 34821)
+INFO:root:<SSAP_message>
+<node_id>b3654543-8f1a-4884-b769-1fe3ee2f228f</node_id>
+<space_id>X</space_id>
+<transaction_type>REGISTER</transaction_type>
+<message_type>REQUEST</message_type>
+<transaction_id>148</transaction_id>
+
+</SSAP_message>

@@ -1,0 +1,267 @@
+INFO:tserver:Server waiting for KPs on port 10010
+INFO:tserver:Server waiting for publishers on port 10011
+INFO:tserver:Incoming connection from ('127.0.0.1', 42065)
+INFO:tserver:Received the following  message from ('127.0.0.1', 42065)
+INFO:tserver:
+INFO:tserver:Message identified as a REGISTER REQUEST
+INFO:tserver:REGISTER REQUEST handled by handle_register_request
+INFO:tserver:Incoming connection from ('127.0.0.1', 41334)
+INFO:tserver:Received the following  message from ('127.0.0.1', 41334)
+INFO:tserver:
+INFO:tserver:Message identified as a JOIN REQUEST
+INFO:tserver:JOIN REQUEST handled by handle_join_request
+INFO:tserver:Incoming connection from ('127.0.0.1', 42069)
+INFO:tserver:Received the following  message from ('127.0.0.1', 42069)
+INFO:tserver:
+INFO:tserver:Message identified as a JOIN CONFIRM
+INFO:tserver:JOIN CONFIRM handled by handle_join_confirm
+INFO:tserver:Incoming connection from ('127.0.0.1', 41337)
+INFO:tserver:Received the following  message from ('127.0.0.1', 41337)
+INFO:tserver:
+INFO:tserver:Message identified as a QUERY REQUEST
+INFO:tserver:RDF QUERY REQUEST handled by handle_rdf_query_request
+INFO:tserver:Incoming connection from ('127.0.0.1', 42072)
+INFO:tserver:Server waiting for KPs on port 10010
+INFO:tserver:Server waiting for publishers on port 10011
+INFO:tserver:Incoming connection from ('127.0.0.1', 42073)
+INFO:tserver:Received the following  message from ('127.0.0.1', 42073)
+INFO:tserver:
+INFO:tserver:Message identified as a REGISTER REQUEST
+INFO:tserver:REGISTER REQUEST handled by handle_register_request
+INFO:tserver:Incoming connection from ('127.0.0.1', 41342)
+INFO:tserver:Received the following  message from ('127.0.0.1', 41342)
+INFO:tserver:
+INFO:tserver:Message identified as a JOIN REQUEST
+INFO:tserver:JOIN REQUEST handled by handle_join_request
+INFO:tserver:Incoming connection from ('127.0.0.1', 42077)
+INFO:tserver:Received the following  message from ('127.0.0.1', 42077)
+INFO:tserver:
+INFO:tserver:Message identified as a JOIN CONFIRM
+INFO:tserver:JOIN CONFIRM handled by handle_join_confirm
+INFO:tserver:Incoming connection from ('127.0.0.1', 41345)
+INFO:tserver:Received the following  message from ('127.0.0.1', 41345)
+INFO:tserver:
+INFO:tserver:Message identified as a QUERY REQUEST
+INFO:tserver:RDF QUERY REQUEST handled by handle_rdf_query_request
+INFO:tserver:Incoming connection from ('127.0.0.1', 42080)
+INFO:tserver:Received the following  message from ('127.0.0.1', 42080)
+INFO:tserver:
+INFO:tserver:Message identified as a QUERY CONFIRM
+INFO:tserver:RDF QUERY CONFIRM handled by handle_rdf_query_confirm
+INFO:tserver:Incoming connection from ('127.0.0.1', 41348)
+INFO:tserver:Received the following  message from ('127.0.0.1', 41348)
+INFO:tserver:
+INFO:tserver:Message identified as a JOIN REQUEST
+INFO:tserver:JOIN REQUEST handled by handle_join_request
+INFO:tserver:Incoming connection from ('127.0.0.1', 42083)
+INFO:tserver:Received the following  message from ('127.0.0.1', 42083)
+INFO:tserver:
+INFO:tserver:Message identified as a JOIN CONFIRM
+INFO:tserver:JOIN CONFIRM handled by handle_join_confirm
+INFO:tserver:Incoming connection from ('127.0.0.1', 41351)
+INFO:tserver:Received the following  message from ('127.0.0.1', 41351)
+INFO:tserver:
+INFO:tserver:Message identified as a LEAVE REQUEST
+INFO:tserver:LEAVE REQUEST handled by handle_leave_request
+INFO:tserver:Incoming connection from ('127.0.0.1', 42086)
+INFO:tserver:Received the following  message from ('127.0.0.1', 42086)
+INFO:tserver:
+INFO:tserver:Message identified as a LEAVE CONFIRM
+INFO:tserver:LEAVE CONFIRM handled by handle_leave_confirm
+INFO:tserver:Incoming connection from ('127.0.0.1', 41354)
+INFO:tserver:Received the following  message from ('127.0.0.1', 41354)
+INFO:tserver:
+INFO:tserver:Message identified as a QUERY REQUEST
+INFO:tserver:RDF QUERY REQUEST handled by handle_rdf_query_request
+INFO:tserver:Incoming connection from ('127.0.0.1', 42089)
+INFO:tserver:Received the following  message from ('127.0.0.1', 42089)
+INFO:tserver:
+INFO:tserver:Message identified as a QUERY CONFIRM
+INFO:tserver:RDF QUERY CONFIRM handled by handle_rdf_query_confirm
+INFO:tserver:Incoming connection from ('127.0.0.1', 41357)
+INFO:tserver:Received the following  message from ('127.0.0.1', 41357)
+INFO:tserver:
+INFO:tserver:Message identified as a REMOVE REQUEST
+INFO:tserver:REMOVE REQUEST handled by handle_remove_request
+INFO:tserver:Incoming connection from ('127.0.0.1', 42092)
+INFO:tserver:Received the following  message from ('127.0.0.1', 42092)
+INFO:tserver:
+INFO:tserver:Message identified as a REMOVE CONFIRM
+INFO:tserver:REMOVE CONFIRM handled by handle_remove_confirm
+INFO:tserver:Incoming connection from ('127.0.0.1', 41360)
+INFO:tserver:Received the following  message from ('127.0.0.1', 41360)
+INFO:tserver:
+INFO:tserver:Message identified as a QUERY REQUEST
+INFO:tserver:RDF QUERY REQUEST handled by handle_rdf_query_request
+INFO:tserver:Incoming connection from ('127.0.0.1', 42095)
+INFO:tserver:Received the following  message from ('127.0.0.1', 42095)
+INFO:tserver:
+INFO:tserver:Message identified as a QUERY CONFIRM
+INFO:tserver:RDF QUERY CONFIRM handled by handle_rdf_query_confirm
+INFO:tserver:Incoming connection from ('127.0.0.1', 41363)
+INFO:tserver:Received the following  message from ('127.0.0.1', 41363)
+INFO:tserver:
+INFO:tserver:Message identified as a JOIN REQUEST
+INFO:tserver:JOIN REQUEST handled by handle_join_request
+INFO:tserver:Incoming connection from ('127.0.0.1', 42098)
+INFO:tserver:Received the following  message from ('127.0.0.1', 42098)
+INFO:tserver:
+INFO:tserver:Message identified as a JOIN CONFIRM
+INFO:tserver:JOIN CONFIRM handled by handle_join_confirm
+INFO:tserver:Incoming connection from ('127.0.0.1', 41366)
+INFO:tserver:Received the following  message from ('127.0.0.1', 41366)
+INFO:tserver:
+INFO:tserver:Message identified as a SUBSCRIBE REQUEST
+INFO:tserver:RDF SUBSCRIBE REQUEST handled by handle_rdf_subscribe_request
+INFO:tserver:Incoming connection from ('127.0.0.1', 42101)
+INFO:tserver:Received the following  message from ('127.0.0.1', 42101)
+INFO:tserver:
+INFO:tserver:Message identified as a SUBSCRIBE CONFIRM
+INFO:tserver:RDF SUBSCRIBE CONFIRM handled by handle_rdf_subscribe_confirm
+INFO:tserver:Incoming connection from ('127.0.0.1', 41369)
+INFO:tserver:Received the following  message from ('127.0.0.1', 41369)
+INFO:tserver:
+INFO:tserver:Message identified as a REMOVE REQUEST
+INFO:tserver:REMOVE REQUEST handled by handle_remove_request
+INFO:tserver:Incoming connection from ('127.0.0.1', 42104)
+INFO:tserver:Received the following  message from ('127.0.0.1', 42104)
+INFO:tserver:
+INFO:tserver:Message identified as a REMOVE CONFIRM
+INFO:tserver:Received the following  message from ('127.0.0.1', 42101)
+INFO:tserver:REMOVE CONFIRM handled by handle_remove_confirm
+INFO:tserver:
+INFO:tserver:Message identified as a SUBSCRIBE INDICATION
+INFO:tserver:SUBSCRIBE INDICATION handled by handle_subscribe_indication
+INFO:tserver:Incoming connection from ('127.0.0.1', 41372)
+INFO:tserver:Received the following  message from ('127.0.0.1', 41372)
+INFO:tserver:
+INFO:tserver:Message identified as a REMOVE REQUEST
+INFO:tserver:REMOVE REQUEST handled by handle_remove_request
+INFO:tserver:Incoming connection from ('127.0.0.1', 42107)
+INFO:tserver:Received the following  message from ('127.0.0.1', 42107)
+INFO:tserver:
+INFO:tserver:Message identified as a REMOVE CONFIRM
+INFO:tserver:REMOVE CONFIRM handled by handle_remove_confirm
+INFO:tserver:Incoming connection from ('127.0.0.1', 41375)
+INFO:tserver:Received the following  message from ('127.0.0.1', 41375)
+INFO:tserver:
+INFO:tserver:Message identified as a REMOVE REQUEST
+INFO:tserver:REMOVE REQUEST handled by handle_remove_request
+INFO:tserver:Incoming connection from ('127.0.0.1', 42110)
+INFO:tserver:Received the following  message from ('127.0.0.1', 42110)
+INFO:tserver:
+INFO:tserver:Message identified as a REMOVE CONFIRM
+INFO:tserver:REMOVE CONFIRM handled by handle_remove_confirm
+INFO:tserver:Incoming connection from ('127.0.0.1', 41378)
+INFO:tserver:Received the following  message from ('127.0.0.1', 41378)
+INFO:tserver:
+INFO:tserver:Message identified as a REMOVE REQUEST
+INFO:tserver:REMOVE REQUEST handled by handle_remove_request
+INFO:tserver:Incoming connection from ('127.0.0.1', 42113)
+INFO:tserver:Received the following  message from ('127.0.0.1', 42113)
+INFO:tserver:
+INFO:tserver:Message identified as a REMOVE CONFIRM
+INFO:tserver:REMOVE CONFIRM handled by handle_remove_confirm
+INFO:tserver:Incoming connection from ('127.0.0.1', 41381)
+INFO:tserver:Received the following  message from ('127.0.0.1', 41381)
+INFO:tserver:
+INFO:tserver:Message identified as a REMOVE REQUEST
+INFO:tserver:REMOVE REQUEST handled by handle_remove_request
+INFO:tserver:Incoming connection from ('127.0.0.1', 42116)
+INFO:tserver:Received the following  message from ('127.0.0.1', 42116)
+INFO:tserver:
+INFO:tserver:Message identified as a REMOVE CONFIRM
+INFO:tserver:REMOVE CONFIRM handled by handle_remove_confirm
+INFO:tserver:Incoming connection from ('127.0.0.1', 41384)
+INFO:tserver:Received the following  message from ('127.0.0.1', 41384)
+INFO:tserver:
+INFO:tserver:Message identified as a REMOVE REQUEST
+INFO:tserver:REMOVE REQUEST handled by handle_remove_request
+INFO:tserver:Incoming connection from ('127.0.0.1', 42119)
+INFO:tserver:Received the following  message from ('127.0.0.1', 42119)
+INFO:tserver:
+INFO:tserver:Message identified as a REMOVE CONFIRM
+INFO:tserver:REMOVE CONFIRM handled by handle_remove_confirm
+INFO:tserver:Incoming connection from ('127.0.0.1', 41387)
+INFO:tserver:Received the following  message from ('127.0.0.1', 41387)
+INFO:tserver:
+INFO:tserver:Message identified as a REMOVE REQUEST
+INFO:tserver:REMOVE REQUEST handled by handle_remove_request
+INFO:tserver:Incoming connection from ('127.0.0.1', 42122)
+INFO:tserver:Received the following  message from ('127.0.0.1', 42122)
+INFO:tserver:
+INFO:tserver:Message identified as a REMOVE CONFIRM
+INFO:tserver:REMOVE CONFIRM handled by handle_remove_confirm
+INFO:tserver:Incoming connection from ('127.0.0.1', 41390)
+INFO:tserver:Received the following  message from ('127.0.0.1', 41390)
+INFO:tserver:
+INFO:tserver:Message identified as a REMOVE REQUEST
+INFO:tserver:REMOVE REQUEST handled by handle_remove_request
+INFO:tserver:Incoming connection from ('127.0.0.1', 42125)
+INFO:tserver:Received the following  message from ('127.0.0.1', 42125)
+INFO:tserver:
+INFO:tserver:Message identified as a REMOVE CONFIRM
+INFO:tserver:REMOVE CONFIRM handled by handle_remove_confirm
+INFO:tserver:Incoming connection from ('127.0.0.1', 41393)
+INFO:tserver:Received the following  message from ('127.0.0.1', 41393)
+INFO:tserver:
+INFO:tserver:Message identified as a REMOVE REQUEST
+INFO:tserver:REMOVE REQUEST handled by handle_remove_request
+INFO:tserver:Incoming connection from ('127.0.0.1', 42128)
+INFO:tserver:Received the following  message from ('127.0.0.1', 42128)
+INFO:tserver:
+INFO:tserver:Message identified as a REMOVE CONFIRM
+INFO:tserver:REMOVE CONFIRM handled by handle_remove_confirm
+INFO:tserver:Incoming connection from ('127.0.0.1', 41396)
+INFO:tserver:Received the following  message from ('127.0.0.1', 41396)
+INFO:tserver:
+INFO:tserver:Message identified as a REMOVE REQUEST
+INFO:tserver:REMOVE REQUEST handled by handle_remove_request
+INFO:tserver:Incoming connection from ('127.0.0.1', 42131)
+INFO:tserver:Received the following  message from ('127.0.0.1', 42131)
+INFO:tserver:
+INFO:tserver:Message identified as a REMOVE CONFIRM
+INFO:tserver:REMOVE CONFIRM handled by handle_remove_confirm
+INFO:tserver:Incoming connection from ('127.0.0.1', 41399)
+INFO:tserver:Received the following  message from ('127.0.0.1', 41399)
+INFO:tserver:
+INFO:tserver:Message identified as a REMOVE REQUEST
+INFO:tserver:REMOVE REQUEST handled by handle_remove_request
+INFO:tserver:Incoming connection from ('127.0.0.1', 42134)
+INFO:tserver:Received the following  message from ('127.0.0.1', 42134)
+INFO:tserver:
+INFO:tserver:Message identified as a REMOVE CONFIRM
+INFO:tserver:REMOVE CONFIRM handled by handle_remove_confirm
+INFO:tserver:Incoming connection from ('127.0.0.1', 41402)
+INFO:tserver:Received the following  message from ('127.0.0.1', 41402)
+INFO:tserver:
+INFO:tserver:Message identified as a REMOVE REQUEST
+INFO:tserver:REMOVE REQUEST handled by handle_remove_request
+INFO:tserver:Incoming connection from ('127.0.0.1', 42137)
+INFO:tserver:Received the following  message from ('127.0.0.1', 42137)
+INFO:tserver:Received the following  message from ('127.0.0.1', 42101)
+INFO:tserver:
+INFO:tserver:
+INFO:tserver:Message identified as a REMOVE CONFIRM
+INFO:tserver:Message identified as a SUBSCRIBE INDICATION
+INFO:tserver:REMOVE CONFIRM handled by handle_remove_confirm
+INFO:tserver:SUBSCRIBE INDICATION handled by handle_subscribe_indication
+INFO:tserver:Incoming connection from ('127.0.0.1', 41405)
+INFO:tserver:Received the following  message from ('127.0.0.1', 41405)
+INFO:tserver:
+INFO:tserver:Message identified as a REMOVE REQUEST
+INFO:tserver:REMOVE REQUEST handled by handle_remove_request
+INFO:tserver:Incoming connection from ('127.0.0.1', 42140)
+INFO:tserver:Received the following  message from ('127.0.0.1', 42101)
+INFO:tserver:
+INFO:tserver:Received the following  message from ('127.0.0.1', 42140)
+INFO:tserver:Message identified as a SUBSCRIBE INDICATION
+INFO:tserver:
+INFO:tserver:SUBSCRIBE INDICATION handled by handle_subscribe_indication
+INFO:tserver:Message identified as a REMOVE CONFIRM
+INFO:tserver:REMOVE CONFIRM handled by handle_remove_confirm
+INFO:tserver:Incoming connection from ('127.0.0.1', 41408)
+INFO:tserver:Received the following  message from ('127.0.0.1', 41408)
+INFO:tserver:
+INFO:tserver:Message identified as a UNSUBSCRIBE REQUEST
+INFO:tserver:RDF UNSUBSCRIBE REQUEST handled by handle_rdf_unsubscribe_request

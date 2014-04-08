@@ -1,0 +1,3 @@
+INFO:tserver:Server waiting for KPs on port 10010
+INFO:tserver:Server waiting for publishers on port 10011
+INFO:tserver:Incoming connection from ('127.0.0.1', 40867)

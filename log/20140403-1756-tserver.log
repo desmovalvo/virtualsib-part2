@@ -1,0 +1,233 @@
+INFO:tserver:Server waiting for KPs on port 10010
+INFO:tserver:Server waiting for publishers on port 10011
+INFO:tserver:Incoming connection from ('127.0.0.1', 40561)
+INFO:tserver:Received the following  message from ('127.0.0.1', 40561)
+INFO:tserver:
+INFO:tserver:Message identified as a REGISTER REQUEST
+INFO:tserver:REGISTER REQUEST handled by handle_register_request
+INFO:tserver:Incoming connection from ('127.0.0.1', 40878)
+INFO:tserver:Received the following  message from ('127.0.0.1', 40878)
+INFO:tserver:
+INFO:tserver:Message identified as a JOIN REQUEST
+INFO:tserver:JOIN REQUEST handled by handle_join_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 40561)
+INFO:tserver:
+INFO:tserver:Message identified as a JOIN CONFIRM
+INFO:tserver:JOIN CONFIRM handled by handle_join_confirm
+INFO:tserver:Incoming connection from ('127.0.0.1', 40883)
+INFO:tserver:Received the following  message from ('127.0.0.1', 40883)
+INFO:tserver:
+INFO:tserver:Message identified as a JOIN REQUEST
+INFO:tserver:JOIN REQUEST handled by handle_join_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 40561)
+INFO:tserver:
+INFO:tserver:Message identified as a JOIN CONFIRM
+INFO:tserver:JOIN CONFIRM handled by handle_join_confirm
+INFO:tserver:Incoming connection from ('127.0.0.1', 40885)
+INFO:tserver:Received the following  message from ('127.0.0.1', 40885)
+INFO:tserver:
+INFO:tserver:Message identified as a SUBSCRIBE REQUEST
+INFO:tserver:RDF SUBSCRIBE REQUEST handled by handle_rdf_subscribe_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 40561)
+INFO:tserver:
+INFO:tserver:Message identified as a SUBSCRIBE CONFIRM
+INFO:tserver:RDF SUBSCRIBE CONFIRM handled by handle_rdf_subscribe_confirm
+INFO:tserver:Server waiting for KPs on port 10010
+INFO:tserver:Server waiting for publishers on port 10011
+INFO:tserver:Incoming connection from ('127.0.0.1', 40575)
+INFO:tserver:Received the following  message from ('127.0.0.1', 40575)
+INFO:tserver:
+INFO:tserver:Message identified as a REGISTER REQUEST
+INFO:tserver:REGISTER REQUEST handled by handle_register_request
+INFO:tserver:Incoming connection from ('127.0.0.1', 40890)
+INFO:tserver:Received the following  message from ('127.0.0.1', 40890)
+INFO:tserver:
+INFO:tserver:Message identified as a JOIN REQUEST
+INFO:tserver:JOIN REQUEST handled by handle_join_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 40575)
+INFO:tserver:
+INFO:tserver:Message identified as a JOIN CONFIRM
+INFO:tserver:JOIN CONFIRM handled by handle_join_confirm
+INFO:tserver:Incoming connection from ('127.0.0.1', 40892)
+INFO:tserver:Received the following  message from ('127.0.0.1', 40892)
+INFO:tserver:
+INFO:tserver:Message identified as a JOIN REQUEST
+INFO:tserver:JOIN REQUEST handled by handle_join_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 40575)
+INFO:tserver:
+INFO:tserver:Message identified as a JOIN CONFIRM
+INFO:tserver:JOIN CONFIRM handled by handle_join_confirm
+INFO:tserver:Incoming connection from ('127.0.0.1', 40894)
+INFO:tserver:Received the following  message from ('127.0.0.1', 40894)
+INFO:tserver:
+INFO:tserver:Message identified as a SUBSCRIBE REQUEST
+INFO:tserver:RDF SUBSCRIBE REQUEST handled by handle_rdf_subscribe_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 40575)
+INFO:tserver:
+INFO:tserver:Message identified as a SUBSCRIBE CONFIRM
+INFO:tserver:RDF SUBSCRIBE CONFIRM handled by handle_rdf_subscribe_confirm
+INFO:tserver:Incoming connection from ('127.0.0.1', 40896)
+INFO:tserver:Received the following  message from ('127.0.0.1', 40896)
+INFO:tserver:
+INFO:tserver:Message identified as a INSERT REQUEST
+INFO:tserver:INSERT REQUEST handled by handle_insert_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 40575)
+INFO:tserver:
+INFO:tserver:Message identified as a INSERT CONFIRM
+INFO:tserver:INSERT CONFIRM handled by handle_insert_confirm
+INFO:tserver:Received the following  message from ('127.0.0.1', 40575)
+INFO:tserver:
+INFO:tserver:Message identified as a SUBSCRIBE INDICATION
+INFO:tserver:SUBSCRIBE INDICATION handled by handle_subscribe_indication
+INFO:tserver:Incoming connection from ('127.0.0.1', 40898)
+INFO:tserver:Received the following  message from ('127.0.0.1', 40898)
+INFO:tserver:
+INFO:tserver:Message identified as a INSERT REQUEST
+INFO:tserver:INSERT REQUEST handled by handle_insert_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 40575)
+INFO:tserver:
+INFO:tserver:Message identified as a INSERT CONFIRM
+INFO:tserver:INSERT CONFIRM handled by handle_insert_confirm
+INFO:tserver:Received the following  message from ('127.0.0.1', 40575)
+INFO:tserver:
+INFO:tserver:Message identified as a SUBSCRIBE INDICATION
+INFO:tserver:SUBSCRIBE INDICATION handled by handle_subscribe_indication
+INFO:tserver:Incoming connection from ('127.0.0.1', 40900)
+INFO:tserver:Received the following  message from ('127.0.0.1', 40900)
+INFO:tserver:
+INFO:tserver:Message identified as a INSERT REQUEST
+INFO:tserver:INSERT REQUEST handled by handle_insert_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 40575)
+INFO:tserver:
+INFO:tserver:Message identified as a INSERT CONFIRM
+INFO:tserver:INSERT CONFIRM handled by handle_insert_confirm
+INFO:tserver:Received the following  message from ('127.0.0.1', 40575)
+INFO:tserver:
+INFO:tserver:Message identified as a SUBSCRIBE INDICATION
+INFO:tserver:SUBSCRIBE INDICATION handled by handle_subscribe_indication
+INFO:tserver:Incoming connection from ('127.0.0.1', 40902)
+INFO:tserver:Received the following  message from ('127.0.0.1', 40902)
+INFO:tserver:
+INFO:tserver:Message identified as a INSERT REQUEST
+INFO:tserver:INSERT REQUEST handled by handle_insert_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 40575)
+INFO:tserver:
+INFO:tserver:Message identified as a SUBSCRIBE INDICATION
+INFO:tserver:SUBSCRIBE INDICATION handled by handle_subscribe_indication
+INFO:tserver:Received the following  message from ('127.0.0.1', 40575)
+INFO:tserver:
+INFO:tserver:Message identified as a INSERT CONFIRM
+INFO:tserver:INSERT CONFIRM handled by handle_insert_confirm
+INFO:tserver:Incoming connection from ('127.0.0.1', 40904)
+INFO:tserver:Received the following  message from ('127.0.0.1', 40904)
+INFO:tserver:
+INFO:tserver:Message identified as a INSERT REQUEST
+INFO:tserver:INSERT REQUEST handled by handle_insert_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 40575)
+INFO:tserver:
+INFO:tserver:Message identified as a INSERT CONFIRM
+INFO:tserver:INSERT CONFIRM handled by handle_insert_confirm
+INFO:tserver:Received the following  message from ('127.0.0.1', 40575)
+INFO:tserver:
+INFO:tserver:Message identified as a SUBSCRIBE INDICATION
+INFO:tserver:SUBSCRIBE INDICATION handled by handle_subscribe_indication
+INFO:tserver:Incoming connection from ('127.0.0.1', 40906)
+INFO:tserver:Received the following  message from ('127.0.0.1', 40906)
+INFO:tserver:
+INFO:tserver:Message identified as a INSERT REQUEST
+INFO:tserver:INSERT REQUEST handled by handle_insert_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 40575)
+INFO:tserver:
+INFO:tserver:Message identified as a INSERT CONFIRM
+INFO:tserver:INSERT CONFIRM handled by handle_insert_confirm
+INFO:tserver:Received the following  message from ('127.0.0.1', 40575)
+INFO:tserver:
+INFO:tserver:Message identified as a SUBSCRIBE INDICATION
+INFO:tserver:SUBSCRIBE INDICATION handled by handle_subscribe_indication
+INFO:tserver:Incoming connection from ('127.0.0.1', 40908)
+INFO:tserver:Received the following  message from ('127.0.0.1', 40908)
+INFO:tserver:
+INFO:tserver:Message identified as a INSERT REQUEST
+INFO:tserver:INSERT REQUEST handled by handle_insert_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 40575)
+INFO:tserver:
+INFO:tserver:Message identified as a INSERT CONFIRM
+INFO:tserver:INSERT CONFIRM handled by handle_insert_confirm
+INFO:tserver:Received the following  message from ('127.0.0.1', 40575)
+INFO:tserver:
+INFO:tserver:Message identified as a SUBSCRIBE INDICATION
+INFO:tserver:SUBSCRIBE INDICATION handled by handle_subscribe_indication
+INFO:tserver:Incoming connection from ('127.0.0.1', 40910)
+INFO:tserver:Received the following  message from ('127.0.0.1', 40910)
+INFO:tserver:
+INFO:tserver:Message identified as a INSERT REQUEST
+INFO:tserver:INSERT REQUEST handled by handle_insert_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 40575)
+INFO:tserver:
+INFO:tserver:Message identified as a INSERT CONFIRM
+INFO:tserver:INSERT CONFIRM handled by handle_insert_confirm
+INFO:tserver:Received the following  message from ('127.0.0.1', 40575)
+INFO:tserver:
+INFO:tserver:Message identified as a SUBSCRIBE INDICATION
+INFO:tserver:SUBSCRIBE INDICATION handled by handle_subscribe_indication
+INFO:tserver:Incoming connection from ('127.0.0.1', 40912)
+INFO:tserver:Received the following  message from ('127.0.0.1', 40912)
+INFO:tserver:
+INFO:tserver:Message identified as a INSERT REQUEST
+INFO:tserver:INSERT REQUEST handled by handle_insert_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 40575)
+INFO:tserver:
+INFO:tserver:Message identified as a SUBSCRIBE INDICATION
+INFO:tserver:SUBSCRIBE INDICATION handled by handle_subscribe_indication
+INFO:tserver:Received the following  message from ('127.0.0.1', 40575)
+INFO:tserver:
+INFO:tserver:Message identified as a INSERT CONFIRM
+INFO:tserver:INSERT CONFIRM handled by handle_insert_confirm
+INFO:tserver:Incoming connection from ('127.0.0.1', 40914)
+INFO:tserver:Received the following  message from ('127.0.0.1', 40914)
+INFO:tserver:
+INFO:tserver:Message identified as a INSERT REQUEST
+INFO:tserver:INSERT REQUEST handled by handle_insert_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 40575)
+INFO:tserver:
+INFO:tserver:Message identified as a INSERT CONFIRM
+INFO:tserver:INSERT CONFIRM handled by handle_insert_confirm
+INFO:tserver:Received the following  message from ('127.0.0.1', 40575)
+INFO:tserver:
+INFO:tserver:Message identified as a SUBSCRIBE INDICATION
+INFO:tserver:SUBSCRIBE INDICATION handled by handle_subscribe_indication
+INFO:tserver:Incoming connection from ('127.0.0.1', 40916)
+INFO:tserver:Received the following  message from ('127.0.0.1', 40916)
+INFO:tserver:
+INFO:tserver:Message identified as a INSERT REQUEST
+INFO:tserver:INSERT REQUEST handled by handle_insert_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 40575)
+INFO:tserver:<SSAP_message><message_type>CONFIRM</message_type><transaction_type>INSERT</transaction_type><transaction_id>19</transaction_id><space_id>X</s
+INFO:tserver:Message identified as a SUBSCRIBE INDICATION
+INFO:tserver:SUBSCRIBE INDICATION handled by handle_subscribe_indication
+INFO:tserver:Received the following  message from ('127.0.0.1', 40575)
+INFO:tserver:
+INFO:tserver:Message identified as a INSERT CONFIRM
+INFO:tserver:INSERT CONFIRM handled by handle_insert_confirm
+INFO:tserver:Incoming connection from ('127.0.0.1', 40918)
+INFO:tserver:Received the following  message from ('127.0.0.1', 40918)
+INFO:tserver:
+INFO:tserver:Message identified as a INSERT REQUEST
+INFO:tserver:INSERT REQUEST handled by handle_insert_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 40575)
+INFO:tserver:
+INFO:tserver:Message identified as a INSERT CONFIRM
+INFO:tserver:INSERT CONFIRM handled by handle_insert_confirm
+INFO:tserver:Received the following  message from ('127.0.0.1', 40575)
+INFO:tserver:
+INFO:tserver:Message identified as a SUBSCRIBE INDICATION
+INFO:tserver:SUBSCRIBE INDICATION handled by handle_subscribe_indication
+INFO:tserver:Incoming connection from ('127.0.0.1', 40920)
+INFO:tserver:Received the following  message from ('127.0.0.1', 40920)
+INFO:tserver:
+INFO:tserver:Message identified as a INSERT REQUEST
+INFO:tserver:INSERT REQUEST handled by handle_insert_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 40575)
+INFO:tserver:<SSAP_message><message_type>CONFIRM</message_type><transaction_type>INSERT</transaction_type><transaction_id>21</transaction_id><space_id>X</space_id><node_id>f0143554-6529-45a4-a6f7-a538835e195e-d866e05f-a784-4219-901d-0e18142d2958</node_id><parameter name="status">m3:Success</parameter><parameter name="bnodes"><urilist></urilist></parameter></SSAP_message>
+INFO:tserver:Message identified as a SUBSCRIBE INDICATION
+INFO:tserver:SUBSCRIBE INDICATION handled by handle_subscribe_indication

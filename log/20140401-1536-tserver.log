@@ -1,0 +1,13 @@
+INFO:root:Server waiting for KPs on port 10010
+INFO:root:Server waiting for publishers on port 10011
+INFO:root:Incoming connection from ('127.0.0.1', 34823)
+INFO:root:Received the following  message from ('127.0.0.1', 34823)
+INFO:root:<SSAP_message>
+<node_id>36349318-6e4a-49c0-bd72-91441a92d62e</node_id>
+<space_id>X</space_id>
+<transaction_type>REGISTER</transaction_type>
+<message_type>REQUEST</message_type>
+<transaction_id>1</transaction_id>
+
+</SSAP_message>
+INFO:root:Message identified as a REGISTER REQUEST

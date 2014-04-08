@@ -1,0 +1,12 @@
+#!/usr/bin/python
+
+class ConnectedKP:
+
+    # initialization: called on JOIN REQUEST
+    def __init__(node_id, clientsock):
+        self.node_id = node_id
+        self.clientsock = clientsock
+        self.status = "Waiting"
+
+    def set_status(status):
+        self.status = 

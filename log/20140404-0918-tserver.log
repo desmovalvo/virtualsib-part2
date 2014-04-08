@@ -1,0 +1,59 @@
+INFO:tserver:Server waiting for KPs on port 10010
+INFO:tserver:Server waiting for publishers on port 10011
+INFO:tserver:Incoming connection from ('127.0.0.1', 39554)
+INFO:tserver:Received the following  message from ('127.0.0.1', 39554)
+INFO:tserver:
+INFO:tserver:Message identified as a REGISTER REQUEST
+INFO:tserver:REGISTER REQUEST handled by handle_register_request
+INFO:tserver:Server waiting for KPs on port 10010
+INFO:tserver:Server waiting for publishers on port 10011
+INFO:tserver:Incoming connection from ('127.0.0.1', 39556)
+INFO:tserver:Received the following  message from ('127.0.0.1', 39556)
+INFO:tserver:
+INFO:tserver:Message identified as a REGISTER REQUEST
+INFO:tserver:REGISTER REQUEST handled by handle_register_request
+INFO:tserver:Incoming connection from ('127.0.0.1', 39303)
+INFO:tserver:Received the following  message from ('127.0.0.1', 39303)
+INFO:tserver:
+INFO:tserver:Message identified as a JOIN REQUEST
+INFO:tserver:JOIN REQUEST handled by handle_join_request
+INFO:tserver:Incoming connection from ('127.0.0.1', 39560)
+INFO:tserver:Received the following  message from ('127.0.0.1', 39560)
+INFO:tserver:
+INFO:tserver:Message identified as a JOIN CONFIRM
+INFO:tserver:JOIN CONFIRM handled by handle_join_confirm
+INFO:tserver:Incoming connection from ('127.0.0.1', 39306)
+INFO:tserver:Received the following  message from ('127.0.0.1', 39306)
+INFO:tserver:
+INFO:tserver:Message identified as a SUBSCRIBE REQUEST
+INFO:tserver:RDF SUBSCRIBE REQUEST handled by handle_rdf_subscribe_request
+INFO:tserver:Incoming connection from ('127.0.0.1', 39563)
+INFO:tserver:Received the following  message from ('127.0.0.1', 39563)
+INFO:tserver:
+INFO:tserver:Message identified as a SUBSCRIBE CONFIRM
+INFO:tserver:RDF SUBSCRIBE CONFIRM handled by handle_rdf_subscribe_confirm
+INFO:tserver:Incoming connection from ('127.0.0.1', 39309)
+INFO:tserver:Received the following  message from ('127.0.0.1', 39309)
+INFO:tserver:
+INFO:tserver:Message identified as a JOIN REQUEST
+INFO:tserver:JOIN REQUEST handled by handle_join_request
+INFO:tserver:Incoming connection from ('127.0.0.1', 39566)
+INFO:tserver:Received the following  message from ('127.0.0.1', 39566)
+INFO:tserver:
+INFO:tserver:Message identified as a JOIN CONFIRM
+INFO:tserver:JOIN CONFIRM handled by handle_join_confirm
+INFO:tserver:Incoming connection from ('127.0.0.1', 39312)
+INFO:tserver:Received the following  message from ('127.0.0.1', 39312)
+INFO:tserver:
+INFO:tserver:Message identified as a INSERT REQUEST
+INFO:tserver:INSERT REQUEST handled by handle_insert_request
+INFO:tserver:Incoming connection from ('127.0.0.1', 39569)
+INFO:tserver:Incoming connection from ('127.0.0.1', 39570)
+INFO:tserver:Received the following  message from ('127.0.0.1', 39569)
+INFO:tserver:
+INFO:tserver:Message identified as a INSERT CONFIRM
+INFO:tserver:Received the following  message from ('127.0.0.1', 39570)
+INFO:tserver:INSERT CONFIRM handled by handle_insert_confirm
+INFO:tserver:
+INFO:tserver:Message identified as a SUBSCRIBE INDICATION
+INFO:tserver:SUBSCRIBE INDICATION handled by handle_subscribe_indication

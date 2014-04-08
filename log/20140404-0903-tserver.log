@@ -1,0 +1,54 @@
+INFO:tserver:Server waiting for KPs on port 10010
+INFO:tserver:Server waiting for publishers on port 10011
+INFO:tserver:Incoming connection from ('127.0.0.1', 39343)
+INFO:tserver:Received the following  message from ('127.0.0.1', 39343)
+INFO:tserver:
+INFO:tserver:Message identified as a REGISTER REQUEST
+INFO:tserver:REGISTER REQUEST handled by handle_register_request
+INFO:tserver:Incoming connection from ('127.0.0.1', 39090)
+INFO:tserver:Received the following  message from ('127.0.0.1', 39090)
+INFO:tserver:
+INFO:tserver:Message identified as a JOIN REQUEST
+INFO:tserver:JOIN REQUEST handled by handle_join_request
+INFO:tserver:Incoming connection from ('127.0.0.1', 39347)
+INFO:tserver:Received the following  message from ('127.0.0.1', 39347)
+INFO:tserver:
+INFO:tserver:Message identified as a JOIN CONFIRM
+INFO:tserver:JOIN CONFIRM handled by handle_join_confirm
+INFO:tserver:Incoming connection from ('127.0.0.1', 39093)
+INFO:tserver:Received the following  message from ('127.0.0.1', 39093)
+INFO:tserver:
+INFO:tserver:Message identified as a LEAVE REQUEST
+INFO:tserver:LEAVE REQUEST handled by handle_leave_request
+INFO:tserver:Incoming connection from ('127.0.0.1', 39350)
+INFO:tserver:Received the following  message from ('127.0.0.1', 39350)
+INFO:tserver:
+INFO:tserver:Message identified as a LEAVE CONFIRM
+INFO:tserver:LEAVE CONFIRM handled by handle_leave_confirm
+INFO:tserver:Server waiting for KPs on port 10010
+INFO:tserver:Server waiting for publishers on port 10011
+INFO:tserver:Incoming connection from ('127.0.0.1', 39351)
+INFO:tserver:Received the following  message from ('127.0.0.1', 39351)
+INFO:tserver:
+INFO:tserver:Message identified as a REGISTER REQUEST
+INFO:tserver:REGISTER REQUEST handled by handle_register_request
+INFO:tserver:Incoming connection from ('127.0.0.1', 39098)
+INFO:tserver:Received the following  message from ('127.0.0.1', 39098)
+INFO:tserver:
+INFO:tserver:Message identified as a JOIN REQUEST
+INFO:tserver:JOIN REQUEST handled by handle_join_request
+INFO:tserver:Incoming connection from ('127.0.0.1', 39355)
+INFO:tserver:Received the following  message from ('127.0.0.1', 39355)
+INFO:tserver:
+INFO:tserver:Message identified as a JOIN CONFIRM
+INFO:tserver:JOIN CONFIRM handled by handle_join_confirm
+INFO:tserver:Incoming connection from ('127.0.0.1', 39101)
+INFO:tserver:Received the following  message from ('127.0.0.1', 39101)
+INFO:tserver:
+INFO:tserver:Message identified as a LEAVE REQUEST
+INFO:tserver:LEAVE REQUEST handled by handle_leave_request
+INFO:tserver:Incoming connection from ('127.0.0.1', 39358)
+INFO:tserver:Received the following  message from ('127.0.0.1', 39358)
+INFO:tserver:
+INFO:tserver:Message identified as a LEAVE CONFIRM
+INFO:tserver:LEAVE CONFIRM handled by handle_leave_confirm

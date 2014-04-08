@@ -1,0 +1,28 @@
+INFO:tserver:Server waiting for KPs on port 10010
+INFO:tserver:Server waiting for publishers on port 10011
+INFO:tserver:Incoming connection from ('127.0.0.1', 52977)
+INFO:tserver:Received the following  message from ('127.0.0.1', 52977)
+INFO:tserver:<SSAP_message><node_id>d1b226ea-4e81-4027-944b-9abc56419f28</node_id><space_id>X</space_id><transaction_type>REGISTER</transaction_type><message_type>REQUEST</message_type><transaction_id>964</transaction_id></SSAP_message>
+INFO:tserver:Message identified as a REGISTER REQUEST
+INFO:tserver:REGISTER REQUEST handled by handle_register_request
+INFO:tserver:Incoming connection from ('127.0.0.1', 48778)
+INFO:tserver:Received the following  message from ('127.0.0.1', 48778)
+INFO:tserver:<SSAP_message><node_id>980b93c4-d248-4cd8-a17a-3f861e8a83b6-5f12ad43-0250-4eb5-a564-f3ab531d804a</node_id><space_id>X</space_id><transaction_type>SUBSCRIBE</transaction_type><message_type>REQUEST</message_type><transaction_id>10</transaction_id><parameter name = "type">RDF-M3</parameter><parameter name = "query"><triple_list><triple><subject type = "URI">1o</subject><predicate>ale</predicate><object type = "URI">http://www.nokia.com/NRC/M3/sib#any</object></triple></triple_list></parameter></SSAP_message>
+INFO:tserver:Message identified as a SUBSCRIBE REQUEST
+INFO:tserver:RDF SUBSCRIBE REQUEST handled by handle_rdf_subscribe_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 52977)
+INFO:tserver:<SSAP_message><message_type>CONFIRM</message_type><transaction_type>SUBSCRIBE</transaction_type><transaction_id>10</transaction_id><space_id>X</space_id><node_id>980b93c4-d248-4cd8-a17a-3f861e8a83b6-5f12ad43-0250-4eb5-a564-f3ab531d804a</node_id><parameter name="status">m3:Success</parameter><parameter name="subscription_id">http://subscribe_graph#980b93c4-d248-4cd8-a17a-3f861e8a83b6-5f12ad43-0250-4eb5-a564-f3ab531d804a_10</parameter><parameter name="results"><triple_list><triple><subject type="uri">1o</subject><predicate>ale</predicate><object type="uri">foo1</object></triple><triple><subject type="uri">1o</subject><predicate>ale</predicate><object type="uri">foo</object></triple></triple_list></parameter></SSAP_message>
+INFO:tserver:Message identified as a SUBSCRIBE CONFIRM
+INFO:tserver:RDF SUBSCRIBE CONFIRM handled by handle_rdf_subscribe_confirm
+INFO:tserver:Incoming connection from ('127.0.0.1', 48781)
+INFO:tserver:Received the following  message from ('127.0.0.1', 48781)
+INFO:tserver:<SSAP_message><node_id>b5498a0a-7e4a-45c6-a559-c79e6c12aa90-6114e8f8-dd70-4ff8-abb8-080ed73a2ab3</node_id><space_id>X</space_id><transaction_type>INSERT</transaction_type><message_type>REQUEST</message_type><transaction_id>4</transaction_id><parameter name = "insert_graph" encoding = "RDF-M3"><triple_list><triple><subject type = "URI">1o</subject><predicate>ale</predicate><object type = "URI">foo1aa</object></triple></triple_list></parameter><parameter name = "confirm">TRUE</parameter></SSAP_message>
+INFO:tserver:Message identified as a INSERT REQUEST
+INFO:tserver:INSERT REQUEST handled by handle_insert_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 52977)
+INFO:tserver:<SSAP_message><message_type>INDICATION</message_type><transaction_type>SUBSCRIBE</transaction_type><space_id>X</space_id><node_id>980b93c4-d248-4cd8-a17a-3f861e8a83b6-5f12ad43-0250-4eb5-a564-f3ab531d804a</node_id><transaction_id>10</transaction_id><parameter name="ind_sequence">1</parameter><parameter name="subscription_id">http://subscribe_graph#980b93c4-d248-4cd8-a17a-3f861e8a83b6-5f12ad43-0250-4eb5-a564-f3ab531d804a_10</parameter><parameter name="new_results"><triple_list><triple><subject type="uri">1o</subject><predicate>ale</predicate><object type="uri">foo1aa</object></triple></triple_list></parameter><parameter name="obsolete_results"><triple_list></triple_list></parameter></SSAP_message>
+INFO:tserver:Message identified as a SUBSCRIBE INDICATION
+INFO:tserver:Received the following  message from ('127.0.0.1', 52977)
+INFO:tserver:<SSAP_message><message_type>CONFIRM</message_type><transaction_type>INSERT</transaction_type><transaction_id>4</transaction_id><space_id>X</space_id><node_id>b5498a0a-7e4a-45c6-a559-c79e6c12aa90-6114e8f8-dd70-4ff8-abb8-080ed73a2ab3</node_id><parameter name="status">m3:Success</parameter><parameter name="bnodes"><urilist></urilist></parameter></SSAP_message>
+INFO:tserver:Message identified as a INSERT CONFIRM
+INFO:tserver:INSERT CONFIRM handled by handle_insert_confirm

@@ -1,0 +1,82 @@
+INFO:tserver:Server waiting for KPs on port 10010
+INFO:tserver:Server waiting for publishers on port 10011
+INFO:tserver:Incoming connection from ('127.0.0.1', 40686)
+INFO:tserver:Received the following  message from ('127.0.0.1', 40686)
+INFO:tserver:
+INFO:tserver:Message identified as a REGISTER REQUEST
+INFO:tserver:REGISTER REQUEST handled by handle_register_request
+INFO:tserver:Incoming connection from ('127.0.0.1', 41001)
+INFO:tserver:Received the following  message from ('127.0.0.1', 41001)
+INFO:tserver:
+INFO:tserver:Message identified as a JOIN REQUEST
+INFO:tserver:JOIN REQUEST handled by handle_join_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 40686)
+INFO:tserver:
+INFO:tserver:Message identified as a JOIN CONFIRM
+INFO:tserver:JOIN CONFIRM handled by handle_join_confirm
+INFO:tserver:Incoming connection from ('127.0.0.1', 41003)
+INFO:tserver:Received the following  message from ('127.0.0.1', 41003)
+INFO:tserver:
+INFO:tserver:Message identified as a SUBSCRIBE REQUEST
+INFO:tserver:RDF SUBSCRIBE REQUEST handled by handle_rdf_subscribe_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 40686)
+INFO:tserver:
+INFO:tserver:Message identified as a SUBSCRIBE CONFIRM
+INFO:tserver:RDF SUBSCRIBE CONFIRM handled by handle_rdf_subscribe_confirm
+INFO:tserver:Incoming connection from ('127.0.0.1', 41005)
+INFO:tserver:Received the following  message from ('127.0.0.1', 41005)
+INFO:tserver:
+INFO:tserver:Message identified as a INSERT REQUEST
+INFO:tserver:INSERT REQUEST handled by handle_insert_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 40686)
+INFO:tserver:
+INFO:tserver:Message identified as a INSERT CONFIRM
+INFO:tserver:INSERT CONFIRM handled by handle_insert_confirm
+INFO:tserver:Received the following  message from ('127.0.0.1', 40686)
+INFO:tserver:
+INFO:tserver:Message identified as a SUBSCRIBE INDICATION
+INFO:tserver:SUBSCRIBE INDICATION handled by handle_subscribe_indication
+INFO:tserver:Incoming connection from ('127.0.0.1', 41007)
+INFO:tserver:Received the following  message from ('127.0.0.1', 41007)
+INFO:tserver:
+INFO:tserver:Message identified as a INSERT REQUEST
+INFO:tserver:INSERT REQUEST handled by handle_insert_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 40686)
+INFO:tserver:
+INFO:tserver:Message identified as a SUBSCRIBE INDICATION
+INFO:tserver:SUBSCRIBE INDICATION handled by handle_subscribe_indication
+INFO:tserver:Received the following  message from ('127.0.0.1', 40686)
+INFO:tserver:
+INFO:tserver:Message identified as a INSERT CONFIRM
+INFO:tserver:INSERT CONFIRM handled by handle_insert_confirm
+INFO:tserver:Incoming connection from ('127.0.0.1', 41009)
+INFO:tserver:Received the following  message from ('127.0.0.1', 41009)
+INFO:tserver:
+INFO:tserver:Message identified as a INSERT REQUEST
+INFO:tserver:INSERT REQUEST handled by handle_insert_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 40686)
+INFO:tserver:<SSAP_message><message_type>INDICATION</message_type><transaction_type>SUBSCRIBE</transaction_type><space_id>X</space_id><node_id>5377163e-e5ff-495e-ac60-533aec9046ef</node_id><transaction_id>1</transaction_id><parameter name="ind_sequence">3</parameter><parameter name="subscription_id">http://subscribe_graph#5377163e-e5ff-495e-ac60-533aec9046ef_1</parameter><parameter name="new_results"><triple_list><triple><subject type="uri">1411euaa</subject><predicate>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</predicate><object type="uri">http://www.w3.org/1999/02/22-rdf-syntax-ns#Property</object></triple><triple><subject type="uri">aooeuao</subject><predicate>
+INFO:tserver:Message identified as a INSERT CONFIRM
+INFO:tserver:INSERT CONFIRM handled by handle_insert_confirm
+INFO:tserver:Received the following  message from ('127.0.0.1', 40686)
+INFO:tserver:
+INFO:tserver:Message identified as a SUBSCRIBE INDICATION
+INFO:tserver:SUBSCRIBE INDICATION handled by handle_subscribe_indication
+INFO:tserver:Incoming connection from ('127.0.0.1', 41011)
+INFO:tserver:Received the following  message from ('127.0.0.1', 41011)
+INFO:tserver:
+INFO:tserver:Message identified as a INSERT REQUEST
+INFO:tserver:INSERT REQUEST handled by handle_insert_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 40686)
+INFO:tserver:<SSAP_message><message_type>INDICATION</message_type><transaction_type>SUBSCRIBE</transaction_type><space_id>X</space_id><node_id>5377163e-e5ff-495e-ac60-533aec9046ef</node_id><transaction_id>1</transaction_id><parameter name="ind_sequence">4</parameter><parameter name="subscription_id">http://subscribe_graph#5377163e-e5ff-495e-ac60-533aec9046ef_1</parameter><parameter name="new_results"><triple_list><triple><subject type="uri">oaeuaoeuaooeuao</subject><predicate>1411euaa</predicate><object type="uri">1ao1</object></triple></triple_list></parameter><parameter name="obsolete_results"><triple_list></triple_list></parameter></SSAP_message>
+INFO:tserver:Message identified as a INSERT CONFIRM
+INFO:tserver:INSERT CONFIRM handled by handle_insert_confirm
+INFO:tserver:Incoming connection from ('127.0.0.1', 41013)
+INFO:tserver:Received the following  message from ('127.0.0.1', 41013)
+INFO:tserver:
+INFO:tserver:Message identified as a INSERT REQUEST
+INFO:tserver:INSERT REQUEST handled by handle_insert_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 40686)
+INFO:tserver:<SSAP_message><message_type>INDICATION</message_type><transaction_type>SUBSCRIBE</transaction_type><space_id>X</space_id><node_id>5377163e-e5ff-495e-ac60-533aec9046ef</node_id><transaction_id>1</transaction_id><parameter name="ind_sequence">5</parameter><parameter name="subscription_id">http://subscribe_graph#5377163e-e5ff-495e-ac60-533aec9046ef_1</parameter><parameter name="new_results"><triple_list><triple><subject type="uri">oaeuaoeuaooeua1111111</subject><predicate>1411euaa</predicate><object type="uri">1ao1</object></triple></triple_list></parameter><parameter name="obsolete_results"><triple_list></triple_list></parameter></SSAP_message><SSAP_message><message_type>CONFIRM</message_type><transaction_type>INSERT</transaction_type><transaction_id>47</transaction_id><space_id>X</space_id><node_id>f0143554-6529-45a4-a6f7-a538835e195e-d866e05f-a784-4219-901d-0e18142d2958</node_id><parameter name="status">m3:Success</parameter><parameter name="bnodes"><urilist></urilist></parameter></SSAP_message>
+INFO:tserver:Message identified as a SUBSCRIBE INDICATION
+INFO:tserver:SUBSCRIBE INDICATION handled by handle_subscribe_indication

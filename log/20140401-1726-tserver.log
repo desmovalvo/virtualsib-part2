@@ -1,0 +1,7 @@
+INFO:tserver:Server waiting for KPs on port 10010
+INFO:tserver:Server waiting for publishers on port 10011
+INFO:tserver:Incoming connection from ('127.0.0.1', 35825)
+INFO:tserver:Received the following  message from ('127.0.0.1', 35825)
+INFO:tserver:<SSAP_message><node_id>40463400-496a-4d54-956e-6ee59fd76241</node_id><space_id>X</space_id><transaction_type>REGISTER</transaction_type><message_type>REQUEST</message_type><transaction_id>779</transaction_id></SSAP_message>
+INFO:tserver:Message identified as a REGISTER REQUEST
+INFO:tserver:REGISTER REQUEST handled by handle_register_request

@@ -1,0 +1,79 @@
+INFO:tserver:Server waiting for KPs on port 10010
+INFO:tserver:Server waiting for publishers on port 10011
+INFO:tserver:Incoming connection from ('127.0.0.1', 40431)
+INFO:tserver:Received the following  message from ('127.0.0.1', 40431)
+INFO:tserver:
+INFO:tserver:Message identified as a REGISTER REQUEST
+INFO:tserver:REGISTER REQUEST handled by handle_register_request
+INFO:tserver:Incoming connection from ('127.0.0.1', 40746)
+INFO:tserver:Received the following  message from ('127.0.0.1', 40746)
+INFO:tserver:
+INFO:tserver:Message identified as a JOIN REQUEST
+INFO:tserver:JOIN REQUEST handled by handle_join_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 40431)
+INFO:tserver:
+INFO:tserver:Message identified as a JOIN CONFIRM
+INFO:tserver:JOIN CONFIRM handled by handle_join_confirm
+INFO:tserver:Incoming connection from ('127.0.0.1', 40751)
+INFO:tserver:Received the following  message from ('127.0.0.1', 40751)
+INFO:tserver:
+INFO:tserver:Message identified as a JOIN REQUEST
+INFO:tserver:JOIN REQUEST handled by handle_join_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 40431)
+INFO:tserver:
+INFO:tserver:Message identified as a JOIN CONFIRM
+INFO:tserver:JOIN CONFIRM handled by handle_join_confirm
+INFO:tserver:Incoming connection from ('127.0.0.1', 40753)
+INFO:tserver:Received the following  message from ('127.0.0.1', 40753)
+INFO:tserver:
+INFO:tserver:Message identified as a SUBSCRIBE REQUEST
+INFO:tserver:RDF SUBSCRIBE REQUEST handled by handle_rdf_subscribe_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 40431)
+INFO:tserver:
+INFO:tserver:Message identified as a SUBSCRIBE CONFIRM
+INFO:tserver:RDF SUBSCRIBE CONFIRM handled by handle_rdf_subscribe_confirm
+INFO:tserver:Incoming connection from ('127.0.0.1', 40756)
+INFO:tserver:Received the following  message from ('127.0.0.1', 40756)
+INFO:tserver:
+INFO:tserver:Message identified as a UNSUBSCRIBE REQUEST
+INFO:tserver:RDF UNSUBSCRIBE REQUEST handled by handle_rdf_unsubscribe_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 40431)
+INFO:tserver:
+INFO:tserver:Message identified as a UNSUBSCRIBE CONFIRM
+INFO:tserver:RDF UNSUBSCRIBE CONFIRM handled by handle_rdf_unsubscribe_confirm
+INFO:tserver:Incoming connection from ('127.0.0.1', 40758)
+INFO:tserver:Received the following  message from ('127.0.0.1', 40758)
+INFO:tserver:
+INFO:tserver:Message identified as a SUBSCRIBE REQUEST
+INFO:tserver:RDF SUBSCRIBE REQUEST handled by handle_rdf_subscribe_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 40431)
+INFO:tserver:
+INFO:tserver:Message identified as a SUBSCRIBE CONFIRM
+INFO:tserver:RDF SUBSCRIBE CONFIRM handled by handle_rdf_subscribe_confirm
+INFO:tserver:Incoming connection from ('127.0.0.1', 40760)
+INFO:tserver:Received the following  message from ('127.0.0.1', 40760)
+INFO:tserver:
+INFO:tserver:Message identified as a UNSUBSCRIBE REQUEST
+INFO:tserver:RDF UNSUBSCRIBE REQUEST handled by handle_rdf_unsubscribe_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 40431)
+INFO:tserver:
+INFO:tserver:Message identified as a UNSUBSCRIBE CONFIRM
+INFO:tserver:RDF UNSUBSCRIBE CONFIRM handled by handle_rdf_unsubscribe_confirm
+INFO:tserver:Incoming connection from ('127.0.0.1', 40762)
+INFO:tserver:Received the following  message from ('127.0.0.1', 40762)
+INFO:tserver:
+INFO:tserver:Message identified as a SUBSCRIBE REQUEST
+INFO:tserver:RDF SUBSCRIBE REQUEST handled by handle_rdf_subscribe_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 40431)
+INFO:tserver:
+INFO:tserver:Message identified as a SUBSCRIBE CONFIRM
+INFO:tserver:RDF SUBSCRIBE CONFIRM handled by handle_rdf_subscribe_confirm
+INFO:tserver:Incoming connection from ('127.0.0.1', 40764)
+INFO:tserver:Received the following  message from ('127.0.0.1', 40764)
+INFO:tserver:
+INFO:tserver:Message identified as a UNSUBSCRIBE REQUEST
+INFO:tserver:RDF UNSUBSCRIBE REQUEST handled by handle_rdf_unsubscribe_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 40431)
+INFO:tserver:
+INFO:tserver:Message identified as a UNSUBSCRIBE CONFIRM
+INFO:tserver:RDF UNSUBSCRIBE CONFIRM handled by handle_rdf_unsubscribe_confirm

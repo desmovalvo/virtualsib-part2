@@ -1,0 +1,27 @@
+INFO:tserver:Server waiting for KPs on port 10010
+INFO:tserver:Server waiting for publishers on port 10011
+INFO:tserver:Incoming connection from ('127.0.0.1', 35318)
+INFO:tserver:Received the following  message from ('127.0.0.1', 35318)
+INFO:tserver:<SSAP_message>
+<node_id>e31f90bb-ef36-4f33-a1df-067b0f50cd98</node_id>
+<space_id>X</space_id>
+<transaction_type>REGISTER</transaction_type>
+<message_type>REQUEST</message_type>
+<transaction_id>925</transaction_id>
+
+</SSAP_message>
+INFO:tserver:Message identified as a REGISTER REQUEST
+INFO:tserver:REGISTER REQUEST handled by handle_register_request
+INFO:tserver:Incoming connection from ('127.0.0.1', 36937)
+INFO:tserver:Received the following  message from ('127.0.0.1', 36937)
+INFO:tserver:
+<SSAP_message>
+<node_id>d0a3c63b-8832-4593-be2b-09384adb0339-630dbd23-1534-4d8a-b849-45ba5677dafd</node_id>
+<space_id>X</space_id>
+<transaction_type>JOIN</transaction_type>
+<message_type>REQUEST</message_type>
+<transaction_id>10</transaction_id>
+<parameter name = "credentials">XYZZY</parameter>
+</SSAP_message>
+INFO:tserver:Message identified as a JOIN REQUEST
+INFO:tserver:JOIN REQUEST handled by handle_join_request

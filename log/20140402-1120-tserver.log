@@ -1,0 +1,16 @@
+INFO:tserver:Server waiting for KPs on port 10010
+INFO:tserver:Server waiting for publishers on port 10011
+INFO:tserver:Incoming connection from ('127.0.0.1', 33289)
+INFO:tserver:Received the following  message from ('127.0.0.1', 33289)
+INFO:tserver:<SSAP_message><node_id>e8b802ae-4d24-4b5c-9bd4-3f3e8b14b654</node_id><space_id>X</space_id><transaction_type>REGISTER</transaction_type><message_type>REQUEST</message_type><transaction_id>217</transaction_id></SSAP_message>
+INFO:tserver:Message identified as a REGISTER REQUEST
+INFO:tserver:REGISTER REQUEST handled by handle_register_request
+INFO:tserver:Incoming connection from ('127.0.0.1', 48922)
+INFO:tserver:Received the following  message from ('127.0.0.1', 48922)
+INFO:tserver:<SSAP_message><node_id>83ff3218-0634-4a2e-a5dc-4688720c83bc-d711aba6-5fe8-4657-a7bc-505376316c35</node_id><space_id>X</space_id><transaction_type>SUBSCRIBE</transaction_type><message_type>REQUEST</message_type><transaction_id>12</transaction_id><parameter name = "type">RDF-M3</parameter><parameter name = "query"><triple_list><triple><subject type = "URI">1o</subject><predicate>ale</predicate><object type = "URI">http://www.nokia.com/NRC/M3/sib#any</object></triple></triple_list></parameter></SSAP_message>
+INFO:tserver:Message identified as a SUBSCRIBE REQUEST
+INFO:tserver:RDF SUBSCRIBE REQUEST handled by handle_rdf_subscribe_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 33289)
+INFO:tserver:<SSAP_message><message_type>CONFIRM</message_type><transaction_type>SUBSCRIBE</transaction_type><transaction_id>12</transaction_id><space_id>X</space_id><node_id>83ff3218-0634-4a2e-a5dc-4688720c83bc-d711aba6-5fe8-4657-a7bc-505376316c35</node_id><parameter name="status">m3:Success</parameter><parameter name="subscription_id">http://subscribe_graph#83ff3218-0634-4a2e-a5dc-4688720c83bc-d711aba6-5fe8-4657-a7bc-505376316c35_12</parameter><parameter name="results"><triple_list><triple><subject type="uri">1o</subject><predicate>ale</predicate><object type="uri">oeuau1</object></triple><triple><subject type="uri">1o</subject><predicate>ale</predicate><object type="uri">oeuau</object></triple></triple_list></parameter></SSAP_message>
+INFO:tserver:Message identified as a SUBSCRIBE CONFIRM
+INFO:tserver:RDF SUBSCRIBE CONFIRM handled by handle_rdf_subscribe_confirm

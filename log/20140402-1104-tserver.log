@@ -1,0 +1,24 @@
+INFO:tserver:Server waiting for KPs on port 10010
+INFO:tserver:Server waiting for publishers on port 10011
+INFO:tserver:Incoming connection from ('127.0.0.1', 33239)
+INFO:tserver:Received the following  message from ('127.0.0.1', 33239)
+INFO:tserver:<SSAP_message><node_id>7a2e9e75-a2ed-4856-a011-ab21b21ec611</node_id><space_id>X</space_id><transaction_type>REGISTER</transaction_type><message_type>REQUEST</message_type><transaction_id>718</transaction_id></SSAP_message>
+INFO:tserver:Message identified as a REGISTER REQUEST
+INFO:tserver:REGISTER REQUEST handled by handle_register_request
+INFO:tserver:Incoming connection from ('127.0.0.1', 48872)
+INFO:tserver:Received the following  message from ('127.0.0.1', 48872)
+INFO:tserver:<SSAP_message><node_id>83ff3218-0634-4a2e-a5dc-4688720c83bc-d711aba6-5fe8-4657-a7bc-505376316c35</node_id><space_id>X</space_id><transaction_type>SUBSCRIBE</transaction_type><message_type>REQUEST</message_type><transaction_id>3</transaction_id><parameter name = "type">RDF-M3</parameter><parameter name = "query"><triple_list><triple><subject type = "URI">1o</subject><predicate>ale</predicate><object type = "URI">http://www.nokia.com/NRC/M3/sib#any</object></triple></triple_list></parameter></SSAP_message>
+INFO:tserver:Message identified as a SUBSCRIBE REQUEST
+INFO:tserver:RDF SUBSCRIBE REQUEST handled by handle_rdf_subscribe_request
+INFO:tserver:Server waiting for KPs on port 10010
+INFO:tserver:Server waiting for publishers on port 10011
+INFO:tserver:Incoming connection from ('127.0.0.1', 33242)
+INFO:tserver:Received the following  message from ('127.0.0.1', 33242)
+INFO:tserver:<SSAP_message><node_id>20e72e01-f2b3-4eee-a662-35605fa50c82</node_id><space_id>X</space_id><transaction_type>REGISTER</transaction_type><message_type>REQUEST</message_type><transaction_id>585</transaction_id></SSAP_message>
+INFO:tserver:Message identified as a REGISTER REQUEST
+INFO:tserver:REGISTER REQUEST handled by handle_register_request
+INFO:tserver:Incoming connection from ('127.0.0.1', 48875)
+INFO:tserver:Received the following  message from ('127.0.0.1', 48875)
+INFO:tserver:<SSAP_message><node_id>83ff3218-0634-4a2e-a5dc-4688720c83bc-d711aba6-5fe8-4657-a7bc-505376316c35</node_id><space_id>X</space_id><transaction_type>SUBSCRIBE</transaction_type><message_type>REQUEST</message_type><transaction_id>4</transaction_id><parameter name = "type">RDF-M3</parameter><parameter name = "query"><triple_list><triple><subject type = "URI">1o</subject><predicate>ale</predicate><object type = "URI">http://www.nokia.com/NRC/M3/sib#any</object></triple></triple_list></parameter></SSAP_message>
+INFO:tserver:Message identified as a SUBSCRIBE REQUEST
+INFO:tserver:RDF SUBSCRIBE REQUEST handled by handle_rdf_subscribe_request

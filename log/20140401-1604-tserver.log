@@ -1,0 +1,50 @@
+INFO:root:Server waiting for KPs on port 10010
+INFO:root:Server waiting for publishers on port 10011
+INFO:root:Incoming connection from ('127.0.0.1', 35149)
+INFO:root:Received the following  message from ('127.0.0.1', 35149)
+INFO:root:<SSAP_message>
+<node_id>13833b05-b136-470b-9d2c-428af5507f7f</node_id>
+<space_id>X</space_id>
+<transaction_type>REGISTER</transaction_type>
+<message_type>REQUEST</message_type>
+<transaction_id>624</transaction_id>
+
+</SSAP_message>
+INFO:root:Message identified as a REGISTER REQUEST
+INFO:root:Incoming connection from ('127.0.0.1', 36771)
+INFO:root:Received the following  message from ('127.0.0.1', 36771)
+INFO:root:
+<SSAP_message>
+<node_id>55bb9178-6e2e-495e-ba41-a945595e4484-56ee48d1-8c64-4852-a327-bfec1bc845c9</node_id>
+<space_id>X</space_id>
+<transaction_type>JOIN</transaction_type>
+<message_type>REQUEST</message_type>
+<transaction_id>1</transaction_id>
+<parameter name = "credentials">XYZZY</parameter>
+</SSAP_message>
+INFO:root:Message identified as a JOIN REQUEST
+INFO:root:Received the following  message from ('127.0.0.1', 35149)
+INFO:root:<SSAP_message><message_type>CONFIRM</message_type><transaction_type>JOIN</transaction_type><transaction_id>1</transaction_id><space_id>X</space_id><node_id>55bb9178-6e2e-495e-ba41-a945595e4484-56ee48d1-8c64-4852-a327-bfec1bc845c9</node_id><parameter name="status">m3:Success</parameter></SSAP_message>
+INFO:root:Message identified as a JOIN CONFIRM
+INFO:root:Incoming connection from ('127.0.0.1', 36773)
+INFO:root:Received the following  message from ('127.0.0.1', 36773)
+INFO:root:
+<SSAP_message>
+<node_id>55bb9178-6e2e-495e-ba41-a945595e4484-56ee48d1-8c64-4852-a327-bfec1bc845c9</node_id>
+<space_id>X</space_id>
+<transaction_type>SUBSCRIBE</transaction_type>
+<message_type>REQUEST</message_type>
+<transaction_id>2</transaction_id>
+
+<parameter name = "type">RDF-M3</parameter>
+<parameter name = "query"><triple_list>
+<triple>
+<subject type = "URI">1o</subject>
+<predicate>ale</predicate>
+<object type = "URI">http://www.nokia.com/NRC/M3/sib#any</object>
+</triple></triple_list></parameter>
+</SSAP_message>
+INFO:root:Message identified as a SUBSCRIBE REQUEST
+INFO:root:Received the following  message from ('127.0.0.1', 35149)
+INFO:root:<SSAP_message><message_type>CONFIRM</message_type><transaction_type>SUBSCRIBE</transaction_type><transaction_id>2</transaction_id><space_id>X</space_id><node_id>55bb9178-6e2e-495e-ba41-a945595e4484-56ee48d1-8c64-4852-a327-bfec1bc845c9</node_id><parameter name="status">m3:Success</parameter><parameter name="subscription_id">http://subscribe_graph#55bb9178-6e2e-495e-ba41-a945595e4484-56ee48d1-8c64-4852-a327-bfec1bc845c9_2</parameter><parameter name="results"><triple_list><triple><subject type="uri">1o</subject><predicate>ale</predicate><object type="uri">oeuau1</object></triple><triple><subject type="uri">1o</subject><predicate>ale</predicate><object type="uri">oeuau</object></triple></triple_list></parameter></SSAP_message>
+INFO:root:Message identified as a SUBSCRIBE CONFIRM

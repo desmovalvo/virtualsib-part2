@@ -1,0 +1,79 @@
+INFO:tserver:Server waiting for KPs on port 10010
+INFO:tserver:Server waiting for publishers on port 10011
+INFO:tserver:Incoming connection from ('127.0.0.1', 35689)
+INFO:tserver:Received the following  message from ('127.0.0.1', 35689)
+INFO:tserver:<SSAP_message><node_id>c0ef300d-2d8b-452e-840b-5f09b9ad014e</node_id><space_id>X</space_id><transaction_type>REGISTER</transaction_type><message_type>REQUEST</message_type><transaction_id>99</transaction_id></SSAP_message>
+INFO:tserver:Message identified as a REGISTER REQUEST
+INFO:tserver:REGISTER REQUEST handled by handle_register_request
+INFO:tserver:Incoming connection from ('127.0.0.1', 37308)
+INFO:tserver:Received the following  message from ('127.0.0.1', 37308)
+INFO:tserver:<SSAP_message><message_type>REQUEST</message_type><transaction_type>JOIN</transaction_type><transaction_id>1</transaction_id><node_id>3f3f0cc4-6c33-464c-bcb8-ad6776e38f63</node_id><space_id>X</space_id></SSAP_message>
+INFO:tserver:Message identified as a JOIN REQUEST
+INFO:tserver:JOIN REQUEST handled by handle_join_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 35689)
+INFO:tserver:<SSAP_message><message_type>CONFIRM</message_type><transaction_type>JOIN</transaction_type><transaction_id>1</transaction_id><space_id>X</space_id><node_id>3f3f0cc4-6c33-464c-bcb8-ad6776e38f63</node_id><parameter name="status">m3:Success</parameter></SSAP_message>
+INFO:tserver:Message identified as a JOIN CONFIRM
+INFO:tserver:JOIN CONFIRM handled by handle_join_confirm
+INFO:tserver:Incoming connection from ('127.0.0.1', 37310)
+INFO:tserver:Received the following  message from ('127.0.0.1', 37310)
+INFO:tserver:<SSAP_message><message_type>REQUEST</message_type><transaction_type>LEAVE</transaction_type><transaction_id>2</transaction_id><node_id>3f3f0cc4-6c33-464c-bcb8-ad6776e38f63</node_id><space_id>X</space_id></SSAP_message>
+INFO:tserver:Message identified as a LEAVE REQUEST
+INFO:tserver:LEAVE REQUEST handled by handle_leave_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 35689)
+INFO:tserver:<SSAP_message><message_type>CONFIRM</message_type><transaction_type>LEAVE</transaction_type><transaction_id>2</transaction_id><space_id>X</space_id><node_id>3f3f0cc4-6c33-464c-bcb8-ad6776e38f63</node_id><parameter name="status">m3:Success</parameter></SSAP_message>
+INFO:tserver:Message identified as a LEAVE CONFIRM
+INFO:tserver:LEAVE CONFIRM handled by handle_leave_confirm
+INFO:tserver:Incoming connection from ('127.0.0.1', 37312)
+INFO:tserver:Received the following  message from ('127.0.0.1', 37312)
+INFO:tserver:<SSAP_message><transaction_type>QUERY</transaction_type><message_type>REQUEST</message_type><transaction_id>3</transaction_id><node_id>3f3f0cc4-6c33-464c-bcb8-ad6776e38f63</node_id><space_id>X</space_id><parameter name = "type">RDF-M3</parameter><parameter name = "query"><triple_list><triple>        <subject   type="URI">http://www.nokia.com/NRC/M3/sib#any</subject>        <predicate>http://www.nokia.com/NRC/M3/sib#any</predicate>        <object    type="URI">http://www.nokia.com/NRC/M3/sib#any</object></triple></triple_list></parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY REQUEST
+INFO:tserver:RDF QUERY REQUEST handled by handle_rdf_query_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 35689)
+INFO:tserver:<SSAP_message><message_type>CONFIRM</message_type><transaction_type>QUERY</transaction_type><transaction_id>3</transaction_id><space_id>X</space_id><node_id>3f3f0cc4-6c33-464c-bcb8-ad6776e38f63</node_id><parameter name="status">m3:Success</parameter><parameter name="results"><triple_list><triple><subject type="uri">foo</subject><predicate>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</predicate><object type="uri">http://www.w3.org/1999/02/22-rdf-syntax-ns#Property</object></triple><triple><subject type="uri">ale</subject><predicate>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</predicate><object type="uri">http://www.w3.org/1999/02/22-rdf-syntax-ns#Property</object></triple><triple><subject type="uri">1o</subject><predicate>ale</predicate><object type="uri">oeuau1</object></triple><triple><subject type="uri">1o</subject><predicate>ale</predicate><object type="uri">oeuau</object></triple></triple_list></parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY CONFIRM
+INFO:tserver:RDF QUERY CONFIRM handled by handle_rdf_query_confirm
+INFO:tserver:Incoming connection from ('127.0.0.1', 37315)
+INFO:tserver:Received the following  message from ('127.0.0.1', 37315)
+INFO:tserver:<SSAP_message><message_type>REQUEST</message_type><transaction_type>JOIN</transaction_type><transaction_id>1</transaction_id><node_id>94adcdd2-2243-4a6c-b0ce-58c12fdadbf8</node_id><space_id>X</space_id></SSAP_message>
+INFO:tserver:Message identified as a JOIN REQUEST
+INFO:tserver:JOIN REQUEST handled by handle_join_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 35689)
+INFO:tserver:<SSAP_message><message_type>CONFIRM</message_type><transaction_type>JOIN</transaction_type><transaction_id>1</transaction_id><space_id>X</space_id><node_id>94adcdd2-2243-4a6c-b0ce-58c12fdadbf8</node_id><parameter name="status">m3:Success</parameter></SSAP_message>
+INFO:tserver:Message identified as a JOIN CONFIRM
+INFO:tserver:JOIN CONFIRM handled by handle_join_confirm
+INFO:tserver:Incoming connection from ('127.0.0.1', 37317)
+INFO:tserver:Received the following  message from ('127.0.0.1', 37317)
+INFO:tserver:<SSAP_message><transaction_type>QUERY</transaction_type><message_type>REQUEST</message_type><transaction_id>2</transaction_id><node_id>94adcdd2-2243-4a6c-b0ce-58c12fdadbf8</node_id><space_id>X</space_id><parameter name = "type">sparql</parameter><parameter name = "query">SELECT ?s ?p ?o WHERE { ?s ?p ?o }</parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY REQUEST
+INFO:tserver:SPARQL QUERY REQUEST handled by handle_sparql_query_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 35689)
+INFO:tserver:<SSAP_message><message_type>CONFIRM</message_type><transaction_type>QUERY</transaction_type><transaction_id>2</transaction_id><space_id>X</space_id><node_id>94adcdd2-2243-4a6c-b0ce-58c12fdadbf8</node_id><parameter name="status">m3:Success</parameter><parameter name="results"><sparql xmlns="http://www.w3.org/2005/sparql-results#"><head><variable name="s"/><variable name="p"/><variable name="o"/></head><results><result><binding name="s"><uri>1o</uri></binding><binding name="p"><uri>ale</uri></binding><binding name="o"><uri>oeuau</uri></binding></result><result><binding name="s"><uri>1o</uri></binding><binding name="p"><uri>ale</uri></binding><binding name="o"><uri>oeuau1</uri></binding></result><result><binding name="s"><uri>ale</uri></binding><binding name="p"><uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri></binding><binding name="o"><uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#Property</uri></binding></result><result><binding name="s"><uri>foo</uri></binding><binding name="p"><uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri></binding><binding name="o"><uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#Property</uri></binding></result></results></sparql></parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY CONFIRM
+INFO:tserver:SPARQL QUERY CONFIRM handled by handle_sparql_query_confirm
+INFO:tserver:Incoming connection from ('127.0.0.1', 37319)
+INFO:tserver:Received the following  message from ('127.0.0.1', 37319)
+INFO:tserver:<SSAP_message><message_type>REQUEST</message_type><transaction_type>INSERT</transaction_type><transaction_id>3</transaction_id><node_id>94adcdd2-2243-4a6c-b0ce-58c12fdadbf8</node_id><space_id>X</space_id><parameter name="confirm">TRUE</parameter><parameter name="insert_graph"  encoding="RDF-M3"><triple_list> <triple>  <subject type="uri">Fabio</subject>  <predicate>hasType</predicate>  <object type="uri">Person</object> </triple></triple_list></parameter></SSAP_message>
+INFO:tserver:Message identified as a INSERT REQUEST
+INFO:tserver:INSERT REQUEST handled by handle_insert_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 35689)
+INFO:tserver:<SSAP_message><message_type>CONFIRM</message_type><transaction_type>INSERT</transaction_type><transaction_id>3</transaction_id><space_id>X</space_id><node_id>94adcdd2-2243-4a6c-b0ce-58c12fdadbf8</node_id><parameter name="status">m3:Success</parameter><parameter name="bnodes"><urilist></urilist></parameter></SSAP_message>
+INFO:tserver:Message identified as a INSERT CONFIRM
+INFO:tserver:INSERT CONFIRM handled by handle_insert_confirm
+INFO:tserver:Incoming connection from ('127.0.0.1', 37321)
+INFO:tserver:Received the following  message from ('127.0.0.1', 37321)
+INFO:tserver:<SSAP_message><node_id>67da7479-9c23-4c36-9961-30159befa17c-339df8d2-4cf6-42b9-9313-6ba6f0270448</node_id><space_id>X</space_id><transaction_type>QUERY</transaction_type><message_type>REQUEST</message_type><transaction_id>1</transaction_id><parameter name = "type">sparql</parameter><parameter name = "query">PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt;PREFIX xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;PREFIX ns: &lt;http://smartM3Lab/Ontology.owl#&gt;SELECT ?s ?p ?o WHERE { ?s ?p ?o }</parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY REQUEST
+INFO:tserver:SPARQL QUERY REQUEST handled by handle_sparql_query_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 35689)
+INFO:tserver:<SSAP_message><message_type>CONFIRM</message_type><transaction_type>QUERY</transaction_type><transaction_id>1</transaction_id><space_id>X</space_id><node_id>67da7479-9c23-4c36-9961-30159befa17c-339df8d2-4cf6-42b9-9313-6ba6f0270448</node_id><parameter name="status">m3:Success</parameter><parameter name="results"><sparql xmlns="http://www.w3.org/2005/sparql-results#"><head><variable name="s"/><variable name="p"/><variable name="o"/></head><results><result><binding name="s"><uri>1o</uri></binding><binding name="p"><uri>ale</uri></binding><binding name="o"><uri>oeuau</uri></binding></result><result><binding name="s"><uri>1o</uri></binding><binding name="p"><uri>ale</uri></binding><binding name="o"><uri>oeuau1</uri></binding></result><result><binding name="s"><uri>ale</uri></binding><binding name="p"><uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri></binding><binding name="o"><uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#Property</uri></binding></result><result><binding name="s"><uri>foo</uri></binding><binding name="p"><uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri></binding><binding name="o"><uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#Property</uri></binding></result><result><binding name="s"><uri>Fabio</uri></binding><binding name="p"><uri>hasType</uri></binding><binding name="o"><uri>Person</uri></binding></result><result><binding name="s"><uri>hasType</uri></binding><binding name="p"><uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri></binding><binding name="o"><uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#Property</uri></binding></result></results></sparql></parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY CONFIRM
+INFO:tserver:SPARQL QUERY CONFIRM handled by handle_sparql_query_confirm
+INFO:tserver:Incoming connection from ('127.0.0.1', 37323)
+INFO:tserver:Received the following  message from ('127.0.0.1', 37323)
+INFO:tserver:<SSAP_message><message_type>REQUEST</message_type><transaction_type>REMOVE</transaction_type><transaction_id>4</transaction_id><node_id>94adcdd2-2243-4a6c-b0ce-58c12fdadbf8</node_id><space_id>X</space_id><parameter name="confirm">TRUE</parameter><parameter name="remove_graph"  encoding="RDF-M3"><triple_list><triple><subject type="uri">Fabio</subject><predicate>hasType</predicate><object type="uri">Person</object> </triple></triple_list></parameter></SSAP_message>
+INFO:tserver:Message identified as a REMOVE REQUEST
+INFO:tserver:REMOVE REQUEST handled by handle_remove_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 35689)
+INFO:tserver:<SSAP_message><message_type>CONFIRM</message_type><transaction_type>REMOVE</transaction_type><transaction_id>4</transaction_id><space_id>X</space_id><node_id>94adcdd2-2243-4a6c-b0ce-58c12fdadbf8</node_id><parameter name="status">m3:Success</parameter></SSAP_message>
+INFO:tserver:Message identified as a REMOVE CONFIRM
+INFO:tserver:REMOVE CONFIRM handled by handle_remove_confirm

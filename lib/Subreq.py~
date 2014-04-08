@@ -1,0 +1,13 @@
+#!/usr/bin/pyhton
+
+# requirements
+import uuid
+
+# the Subreq class
+class Subreq:
+
+    # initialization
+    def __init__(node_id, request_transaction_id):
+        self.node_id = node_id
+        self.request_transaction_id = request_transaction_id
+        self.virtual_subscription_id = uuid.uuid4()

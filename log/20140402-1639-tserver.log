@@ -1,0 +1,571 @@
+INFO:tserver:Server waiting for KPs on port 10010
+INFO:tserver:Server waiting for publishers on port 10011
+INFO:tserver:Incoming connection from ('127.0.0.1', 34661)
+INFO:tserver:Received the following  message from ('127.0.0.1', 34661)
+INFO:tserver:<SSAP_message><node_id>0b22abac-f07b-40aa-bf2d-0a2009249793</node_id><space_id>X</space_id><transaction_type>REGISTER</transaction_type><message_type>REQUEST</message_type><transaction_id>372</transaction_id></SSAP_message>
+INFO:tserver:Message identified as a REGISTER REQUEST
+INFO:tserver:REGISTER REQUEST handled by handle_register_request
+INFO:tserver:Incoming connection from ('127.0.0.1', 50297)
+INFO:tserver:Received the following  message from ('127.0.0.1', 50297)
+INFO:tserver:<SSAP_message><message_type>REQUEST</message_type><transaction_type>JOIN</transaction_type><transaction_id>1</transaction_id><node_id>e9b7fc69-9402-4806-b3b1-c4b534225f6c</node_id><space_id>X</space_id></SSAP_message>
+INFO:tserver:Message identified as a JOIN REQUEST
+INFO:tserver:JOIN REQUEST handled by handle_join_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 34661)
+INFO:tserver:<SSAP_message><message_type>CONFIRM</message_type><transaction_type>JOIN</transaction_type><transaction_id>1</transaction_id><space_id>X</space_id><node_id>e9b7fc69-9402-4806-b3b1-c4b534225f6c</node_id><parameter name="status">m3:Success</parameter></SSAP_message>
+INFO:tserver:Message identified as a JOIN CONFIRM
+INFO:tserver:JOIN CONFIRM handled by handle_join_confirm
+INFO:tserver:Incoming connection from ('127.0.0.1', 50304)
+INFO:tserver:Received the following  message from ('127.0.0.1', 50304)
+INFO:tserver:<SSAP_message><transaction_type>QUERY</transaction_type><message_type>REQUEST</message_type><transaction_id>2</transaction_id><node_id>e9b7fc69-9402-4806-b3b1-c4b534225f6c</node_id><space_id>X</space_id><parameter name = "type">sparql</parameter><parameter name = "query">SELECT ?s ?p ?o WHERE {?s ?p ?o}</parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY REQUEST
+INFO:tserver:SPARQL QUERY REQUEST handled by handle_sparql_query_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 34661)
+INFO:tserver:<SSAP_message><message_type>CONFIRM</message_type><transaction_type>QUERY</transaction_type><transaction_id>2</transaction_id><space_id>X</space_id><node_id>e9b7fc69-9402-4806-b3b1-c4b534225f6c</node_id><parameter name="status">m3:Success</parameter><parameter name="results"><sparql xmlns="http://www.w3.org/2005/sparql-results#"><head><variable name="s"/><variable name="p"/><variable name="o"/></head><results><result><binding name="s"><uri>1o</uri></binding><binding name="p"><uri>ale</uri></binding><binding name="o"><uri>oeuau</uri></binding></result><result><binding name="s"><uri>1o</uri></binding><binding name="p"><uri>ale</uri></binding><binding name="o"><uri>oeuau1</uri></binding></result><result><binding name="s"><uri>ale</uri></binding><binding name="p"><uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri></binding><binding name="o"><uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#Property</uri></binding></result><result><binding name="s"><uri>foo</uri></binding><binding name="p"><uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri></binding><binding name="o"><uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#Property</uri></binding></result></results></sparql></parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY CONFIRM
+INFO:tserver:SPARQL QUERY CONFIRM handled by handle_sparql_query_confirm
+INFO:tserver:Incoming connection from ('127.0.0.1', 50307)
+INFO:tserver:Received the following  message from ('127.0.0.1', 50307)
+INFO:tserver:<SSAP_message><transaction_type>QUERY</transaction_type><message_type>REQUEST</message_type><transaction_id>3</transaction_id><node_id>e9b7fc69-9402-4806-b3b1-c4b534225f6c</node_id><space_id>X</space_id><parameter name = "type">sparql</parameter><parameter name = "query">SELECT ?s ?p WHERE {?s ?p &quot;ale&quot;}</parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY REQUEST
+INFO:tserver:SPARQL QUERY REQUEST handled by handle_sparql_query_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 34661)
+INFO:tserver:<SSAP_message><message_type>CONFIRM</message_type><transaction_type>QUERY</transaction_type><transaction_id>3</transaction_id><space_id>X</space_id><node_id>e9b7fc69-9402-4806-b3b1-c4b534225f6c</node_id><parameter name="status">m3:Success</parameter><parameter name="results"><sparql xmlns="http://www.w3.org/2005/sparql-results#"><head><variable name="s"/><variable name="p"/></head><results></results></sparql></parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY CONFIRM
+INFO:tserver:SPARQL QUERY CONFIRM handled by handle_sparql_query_confirm
+INFO:tserver:Incoming connection from ('127.0.0.1', 50309)
+INFO:tserver:Received the following  message from ('127.0.0.1', 50309)
+INFO:tserver:<SSAP_message><transaction_type>QUERY</transaction_type><message_type>REQUEST</message_type><transaction_id>4</transaction_id><node_id>e9b7fc69-9402-4806-b3b1-c4b534225f6c</node_id><space_id>X</space_id><parameter name = "type">sparql</parameter><parameter name = "query">SELECT ?s ?p WHERE {?s ?p ale}</parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY REQUEST
+INFO:tserver:SPARQL QUERY REQUEST handled by handle_sparql_query_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 34661)
+INFO:tserver:<SSAP_message><message_type>CONFIRM</message_type><transaction_type>QUERY</transaction_type><transaction_id>4</transaction_id><space_id>X</space_id><node_id>e9b7fc69-9402-4806-b3b1-c4b534225f6c</node_id><parameter name="status">m3:SIB.Error</parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY CONFIRM
+INFO:tserver:RDF QUERY CONFIRM handled by handle_rdf_query_confirm
+ERROR:tserver:RDF QUERY CONFIRM forwarding failed
+INFO:tserver:Incoming connection from ('127.0.0.1', 50311)
+INFO:tserver:Received the following  message from ('127.0.0.1', 50311)
+INFO:tserver:<SSAP_message><transaction_type>QUERY</transaction_type><message_type>REQUEST</message_type><transaction_id>5</transaction_id><node_id>e9b7fc69-9402-4806-b3b1-c4b534225f6c</node_id><space_id>X</space_id><parameter name = "type">sparql</parameter><parameter name = "query">SELECT ?s ?p WHERE {?s ?p ale}</parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY REQUEST
+INFO:tserver:SPARQL QUERY REQUEST handled by handle_sparql_query_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 34661)
+INFO:tserver:<SSAP_message><message_type>CONFIRM</message_type><transaction_type>QUERY</transaction_type><transaction_id>5</transaction_id><space_id>X</space_id><node_id>e9b7fc69-9402-4806-b3b1-c4b534225f6c</node_id><parameter name="status">m3:SIB.Error</parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY CONFIRM
+INFO:tserver:RDF QUERY CONFIRM handled by handle_rdf_query_confirm
+ERROR:tserver:RDF QUERY CONFIRM forwarding failed
+INFO:tserver:Incoming connection from ('127.0.0.1', 50313)
+INFO:tserver:Received the following  message from ('127.0.0.1', 50313)
+INFO:tserver:<SSAP_message><transaction_type>QUERY</transaction_type><message_type>REQUEST</message_type><transaction_id>6</transaction_id><node_id>e9b7fc69-9402-4806-b3b1-c4b534225f6c</node_id><space_id>X</space_id><parameter name = "type">sparql</parameter><parameter name = "query">SELECT ?s ?p ?o WHERE {?s ?p ?o}</parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY REQUEST
+INFO:tserver:SPARQL QUERY REQUEST handled by handle_sparql_query_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 34661)
+INFO:tserver:<SSAP_message><message_type>CONFIRM</message_type><transaction_type>QUERY</transaction_type><transaction_id>6</transaction_id><space_id>X</space_id><node_id>e9b7fc69-9402-4806-b3b1-c4b534225f6c</node_id><parameter name="status">m3:Success</parameter><parameter name="results"><sparql xmlns="http://www.w3.org/2005/sparql-results#"><head><variable name="s"/><variable name="p"/><variable name="o"/></head><results><result><binding name="s"><uri>1o</uri></binding><binding name="p"><uri>ale</uri></binding><binding name="o"><uri>oeuau</uri></binding></result><result><binding name="s"><uri>1o</uri></binding><binding name="p"><uri>ale</uri></binding><binding name="o"><uri>oeuau1</uri></binding></result><result><binding name="s"><uri>ale</uri></binding><binding name="p"><uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri></binding><binding name="o"><uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#Property</uri></binding></result><result><binding name="s"><uri>foo</uri></binding><binding name="p"><uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri></binding><binding name="o"><uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#Property</uri></binding></result></results></sparql></parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY CONFIRM
+INFO:tserver:SPARQL QUERY CONFIRM handled by handle_sparql_query_confirm
+INFO:tserver:Incoming connection from ('127.0.0.1', 50315)
+INFO:tserver:Received the following  message from ('127.0.0.1', 50315)
+INFO:tserver:<SSAP_message><transaction_type>QUERY</transaction_type><message_type>REQUEST</message_type><transaction_id>7</transaction_id><node_id>e9b7fc69-9402-4806-b3b1-c4b534225f6c</node_id><space_id>X</space_id><parameter name = "type">sparql</parameter><parameter name = "query">SELECT ?s ?o WHERE {?s ale ?o}</parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY REQUEST
+INFO:tserver:SPARQL QUERY REQUEST handled by handle_sparql_query_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 34661)
+INFO:tserver:<SSAP_message><message_type>CONFIRM</message_type><transaction_type>QUERY</transaction_type><transaction_id>7</transaction_id><space_id>X</space_id><node_id>e9b7fc69-9402-4806-b3b1-c4b534225f6c</node_id><parameter name="status">m3:SIB.Error</parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY CONFIRM
+INFO:tserver:RDF QUERY CONFIRM handled by handle_rdf_query_confirm
+ERROR:tserver:RDF QUERY CONFIRM forwarding failed
+INFO:tserver:Incoming connection from ('127.0.0.1', 50317)
+INFO:tserver:Received the following  message from ('127.0.0.1', 50317)
+INFO:tserver:<SSAP_message><transaction_type>QUERY</transaction_type><message_type>REQUEST</message_type><transaction_id>8</transaction_id><node_id>e9b7fc69-9402-4806-b3b1-c4b534225f6c</node_id><space_id>X</space_id><parameter name = "type">sparql</parameter><parameter name = "query">SELECT ?s ?o WHERE {?s ale ?o}</parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY REQUEST
+INFO:tserver:SPARQL QUERY REQUEST handled by handle_sparql_query_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 34661)
+INFO:tserver:<SSAP_message><message_type>CONFIRM</message_type><transaction_type>QUERY</transaction_type><transaction_id>8</transaction_id><space_id>X</space_id><node_id>e9b7fc69-9402-4806-b3b1-c4b534225f6c</node_id><parameter name="status">m3:SIB.Error</parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY CONFIRM
+INFO:tserver:RDF QUERY CONFIRM handled by handle_rdf_query_confirm
+ERROR:tserver:RDF QUERY CONFIRM forwarding failed
+INFO:tserver:Incoming connection from ('127.0.0.1', 50319)
+INFO:tserver:Received the following  message from ('127.0.0.1', 50319)
+INFO:tserver:<SSAP_message><transaction_type>QUERY</transaction_type><message_type>REQUEST</message_type><transaction_id>9</transaction_id><node_id>e9b7fc69-9402-4806-b3b1-c4b534225f6c</node_id><space_id>X</space_id><parameter name = "type">sparql</parameter><parameter name = "query">SELECT ?s ?o WHERE {?s &quot;ale&quot; ?o}</parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY REQUEST
+INFO:tserver:SPARQL QUERY REQUEST handled by handle_sparql_query_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 34661)
+INFO:tserver:<SSAP_message><message_type>CONFIRM</message_type><transaction_type>QUERY</transaction_type><transaction_id>9</transaction_id><space_id>X</space_id><node_id>e9b7fc69-9402-4806-b3b1-c4b534225f6c</node_id><parameter name="status">m3:SIB.Error</parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY CONFIRM
+INFO:tserver:RDF QUERY CONFIRM handled by handle_rdf_query_confirm
+ERROR:tserver:RDF QUERY CONFIRM forwarding failed
+INFO:tserver:Incoming connection from ('127.0.0.1', 50321)
+INFO:tserver:Received the following  message from ('127.0.0.1', 50321)
+INFO:tserver:<SSAP_message><transaction_type>QUERY</transaction_type><message_type>REQUEST</message_type><transaction_id>10</transaction_id><node_id>e9b7fc69-9402-4806-b3b1-c4b534225f6c</node_id><space_id>X</space_id><parameter name = "type">sparql</parameter><parameter name = "query">SELECT ?s ?p ?o WHERE {?s ?p ?o}</parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY REQUEST
+INFO:tserver:SPARQL QUERY REQUEST handled by handle_sparql_query_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 34661)
+INFO:tserver:<SSAP_message><message_type>CONFIRM</message_type><transaction_type>QUERY</transaction_type><transaction_id>10</transaction_id><space_id>X</space_id><node_id>e9b7fc69-9402-4806-b3b1-c4b534225f6c</node_id><parameter name="status">m3:Success</parameter><parameter name="results"><sparql xmlns="http://www.w3.org/2005/sparql-results#"><head><variable name="s"/><variable name="p"/><variable name="o"/></head><results><result><binding name="s"><uri>1o</uri></binding><binding name="p"><uri>ale</uri></binding><binding name="o"><uri>oeuau</uri></binding></result><result><binding name="s"><uri>1o</uri></binding><binding name="p"><uri>ale</uri></binding><binding name="o"><uri>oeuau1</uri></binding></result><result><binding name="s"><uri>ale</uri></binding><binding name="p"><uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri></binding><binding name="o"><uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#Property</uri></binding></result><result><binding name="s"><uri>foo</uri></binding><binding name="p"><uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri></binding><binding name="o"><uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#Property</uri></binding></result></results></sparql></parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY CONFIRM
+INFO:tserver:SPARQL QUERY CONFIRM handled by handle_sparql_query_confirm
+INFO:tserver:Incoming connection from ('127.0.0.1', 50323)
+INFO:tserver:Received the following  message from ('127.0.0.1', 50323)
+INFO:tserver:<SSAP_message><transaction_type>QUERY</transaction_type><message_type>REQUEST</message_type><transaction_id>11</transaction_id><node_id>e9b7fc69-9402-4806-b3b1-c4b534225f6c</node_id><space_id>X</space_id><parameter name = "type">sparql</parameter><parameter name = "query">SELECT ?s ?p WHERE {?s ?p uri http://www.w3.org/1999/02/22-rdf-syntax-ns#Property}</parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY REQUEST
+INFO:tserver:SPARQL QUERY REQUEST handled by handle_sparql_query_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 34661)
+INFO:tserver:<SSAP_message><message_type>CONFIRM</message_type><transaction_type>QUERY</transaction_type><transaction_id>11</transaction_id><space_id>X</space_id><node_id>e9b7fc69-9402-4806-b3b1-c4b534225f6c</node_id><parameter name="status">m3:SIB.Error</parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY CONFIRM
+INFO:tserver:RDF QUERY CONFIRM handled by handle_rdf_query_confirm
+ERROR:tserver:RDF QUERY CONFIRM forwarding failed
+INFO:tserver:Incoming connection from ('127.0.0.1', 50325)
+INFO:tserver:Received the following  message from ('127.0.0.1', 50325)
+INFO:tserver:<SSAP_message><transaction_type>QUERY</transaction_type><message_type>REQUEST</message_type><transaction_id>12</transaction_id><node_id>e9b7fc69-9402-4806-b3b1-c4b534225f6c</node_id><space_id>X</space_id><parameter name = "type">sparql</parameter><parameter name = "query">SELECT ?s ?p WHERE {?s ?p uri http://www.w3.org/1999/02/22-rdf-syntax-ns#Property}</parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY REQUEST
+INFO:tserver:SPARQL QUERY REQUEST handled by handle_sparql_query_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 34661)
+INFO:tserver:<SSAP_message><message_type>CONFIRM</message_type><transaction_type>QUERY</transaction_type><transaction_id>12</transaction_id><space_id>X</space_id><node_id>e9b7fc69-9402-4806-b3b1-c4b534225f6c</node_id><parameter name="status">m3:SIB.Error</parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY CONFIRM
+INFO:tserver:RDF QUERY CONFIRM handled by handle_rdf_query_confirm
+ERROR:tserver:RDF QUERY CONFIRM forwarding failed
+INFO:tserver:Incoming connection from ('127.0.0.1', 50327)
+INFO:tserver:Received the following  message from ('127.0.0.1', 50327)
+INFO:tserver:<SSAP_message><transaction_type>QUERY</transaction_type><message_type>REQUEST</message_type><transaction_id>13</transaction_id><node_id>e9b7fc69-9402-4806-b3b1-c4b534225f6c</node_id><space_id>X</space_id><parameter name = "type">sparql</parameter><parameter name = "query">SELECT ?s ?p WHERE {?s ?p http://www.w3.org/1999/02/22-rdf-syntax-ns#Property}</parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY REQUEST
+INFO:tserver:SPARQL QUERY REQUEST handled by handle_sparql_query_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 34661)
+INFO:tserver:<SSAP_message><message_type>CONFIRM</message_type><transaction_type>QUERY</transaction_type><transaction_id>13</transaction_id><space_id>X</space_id><node_id>e9b7fc69-9402-4806-b3b1-c4b534225f6c</node_id><parameter name="status">m3:SIB.Error</parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY CONFIRM
+INFO:tserver:RDF QUERY CONFIRM handled by handle_rdf_query_confirm
+ERROR:tserver:RDF QUERY CONFIRM forwarding failed
+INFO:tserver:Incoming connection from ('127.0.0.1', 50329)
+INFO:tserver:Received the following  message from ('127.0.0.1', 50329)
+INFO:tserver:<SSAP_message><transaction_type>QUERY</transaction_type><message_type>REQUEST</message_type><transaction_id>14</transaction_id><node_id>e9b7fc69-9402-4806-b3b1-c4b534225f6c</node_id><space_id>X</space_id><parameter name = "type">sparql</parameter><parameter name = "query">SELECT ?s ?p WHERE {?s ?p http://www.w3.org/1999/02/22-rdf-syntax-ns#Property}</parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY REQUEST
+INFO:tserver:SPARQL QUERY REQUEST handled by handle_sparql_query_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 34661)
+INFO:tserver:<SSAP_message><message_type>CONFIRM</message_type><transaction_type>QUERY</transaction_type><transaction_id>14</transaction_id><space_id>X</space_id><node_id>e9b7fc69-9402-4806-b3b1-c4b534225f6c</node_id><parameter name="status">m3:SIB.Error</parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY CONFIRM
+INFO:tserver:RDF QUERY CONFIRM handled by handle_rdf_query_confirm
+ERROR:tserver:RDF QUERY CONFIRM forwarding failed
+INFO:tserver:Incoming connection from ('127.0.0.1', 50331)
+INFO:tserver:Received the following  message from ('127.0.0.1', 50331)
+INFO:tserver:<SSAP_message><transaction_type>QUERY</transaction_type><message_type>REQUEST</message_type><transaction_id>15</transaction_id><node_id>e9b7fc69-9402-4806-b3b1-c4b534225f6c</node_id><space_id>X</space_id><parameter name = "type">sparql</parameter><parameter name = "query">SELECT ?s ?p WHERE {?s ?p http://www.w3.org/1999/02/22-rdf-syntax-ns#Property}</parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY REQUEST
+INFO:tserver:SPARQL QUERY REQUEST handled by handle_sparql_query_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 34661)
+INFO:tserver:<SSAP_message><message_type>CONFIRM</message_type><transaction_type>QUERY</transaction_type><transaction_id>15</transaction_id><space_id>X</space_id><node_id>e9b7fc69-9402-4806-b3b1-c4b534225f6c</node_id><parameter name="status">m3:SIB.Error</parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY CONFIRM
+INFO:tserver:RDF QUERY CONFIRM handled by handle_rdf_query_confirm
+ERROR:tserver:RDF QUERY CONFIRM forwarding failed
+INFO:tserver:Incoming connection from ('127.0.0.1', 50335)
+INFO:tserver:Received the following  message from ('127.0.0.1', 50335)
+INFO:tserver:<SSAP_message><transaction_type>QUERY</transaction_type><message_type>REQUEST</message_type><transaction_id>16</transaction_id><node_id>e9b7fc69-9402-4806-b3b1-c4b534225f6c</node_id><space_id>X</space_id><parameter name = "type">sparql</parameter><parameter name = "query">SELECT ?s ?p ?o WHERE {?s ?p ?o}</parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY REQUEST
+INFO:tserver:SPARQL QUERY REQUEST handled by handle_sparql_query_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 34661)
+INFO:tserver:<SSAP_message><message_type>CONFIRM</message_type><transaction_type>QUERY</transaction_type><transaction_id>16</transaction_id><space_id>X</space_id><node_id>e9b7fc69-9402-4806-b3b1-c4b534225f6c</node_id><parameter name="status">m3:Success</parameter><parameter name="results"><sparql xmlns="http://www.w3.org/2005/sparql-results#"><head><variable name="s"/><variable name="p"/><variable name="o"/></head><results><result><binding name="s"><uri>1o</uri></binding><binding name="p"><uri>ale</uri></binding><binding name="o"><uri>oeuau</uri></binding></result><result><binding name="s"><uri>1o</uri></binding><binding name="p"><uri>ale</uri></binding><binding name="o"><uri>oeuau1</uri></binding></result><result><binding name="s"><uri>ale</uri></binding><binding name="p"><uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri></binding><binding name="o"><uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#Property</uri></binding></result><result><binding name="s"><uri>foo</uri></binding><binding name="p"><uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri></binding><binding name="o"><uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#Property</uri></binding></result></results></sparql></parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY CONFIRM
+INFO:tserver:SPARQL QUERY CONFIRM handled by handle_sparql_query_confirm
+INFO:tserver:Incoming connection from ('127.0.0.1', 50339)
+INFO:tserver:Received the following  message from ('127.0.0.1', 50339)
+INFO:tserver:<SSAP_message><node_id>a145c67f-0d57-49de-b623-3c76dd6253f8-e814d7a0-9034-46c5-b768-cfc3f4b60d1d</node_id><space_id>X</space_id><transaction_type>JOIN</transaction_type><message_type>REQUEST</message_type><transaction_id>1</transaction_id><parameter name = "credentials">XYZZY</parameter></SSAP_message>
+INFO:tserver:Message identified as a JOIN REQUEST
+INFO:tserver:JOIN REQUEST handled by handle_join_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 34661)
+INFO:tserver:<SSAP_message><message_type>CONFIRM</message_type><transaction_type>JOIN</transaction_type><transaction_id>1</transaction_id><space_id>X</space_id><node_id>a145c67f-0d57-49de-b623-3c76dd6253f8-e814d7a0-9034-46c5-b768-cfc3f4b60d1d</node_id><parameter name="status">m3:Success</parameter></SSAP_message>
+INFO:tserver:Message identified as a JOIN CONFIRM
+INFO:tserver:JOIN CONFIRM handled by handle_join_confirm
+INFO:tserver:Incoming connection from ('127.0.0.1', 50344)
+INFO:tserver:Received the following  message from ('127.0.0.1', 50344)
+INFO:tserver:<SSAP_message><node_id>a145c67f-0d57-49de-b623-3c76dd6253f8-e814d7a0-9034-46c5-b768-cfc3f4b60d1d</node_id><space_id>X</space_id><transaction_type>QUERY</transaction_type><message_type>REQUEST</message_type><transaction_id>2</transaction_id><parameter name = "type">sparql</parameter><parameter name = "query">PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt;PREFIX xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;PREFIX ns: &lt;http://smartM3Lab/Ontology.owl#&gt;SELECT ?s ?p ?o WHERE { ?s ?p ?o }</parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY REQUEST
+INFO:tserver:SPARQL QUERY REQUEST handled by handle_sparql_query_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 34661)
+INFO:tserver:<SSAP_message><message_type>CONFIRM</message_type><transaction_type>QUERY</transaction_type><transaction_id>2</transaction_id><space_id>X</space_id><node_id>a145c67f-0d57-49de-b623-3c76dd6253f8-e814d7a0-9034-46c5-b768-cfc3f4b60d1d</node_id><parameter name="status">m3:Success</parameter><parameter name="results"><sparql xmlns="http://www.w3.org/2005/sparql-results#"><head><variable name="s"/><variable name="p"/><variable name="o"/></head><results><result><binding name="s"><uri>1o</uri></binding><binding name="p"><uri>ale</uri></binding><binding name="o"><uri>oeuau</uri></binding></result><result><binding name="s"><uri>1o</uri></binding><binding name="p"><uri>ale</uri></binding><binding name="o"><uri>oeuau1</uri></binding></result><result><binding name="s"><uri>ale</uri></binding><binding name="p"><uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri></binding><binding name="o"><uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#Property</uri></binding></result><result><binding name="s"><uri>foo</uri></binding><binding name="p"><uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri></binding><binding name="o"><uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#Property</uri></binding></result></results></sparql></parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY CONFIRM
+INFO:tserver:SPARQL QUERY CONFIRM handled by handle_sparql_query_confirm
+INFO:tserver:Incoming connection from ('127.0.0.1', 50346)
+INFO:tserver:Received the following  message from ('127.0.0.1', 50346)
+INFO:tserver:<SSAP_message><node_id>a145c67f-0d57-49de-b623-3c76dd6253f8-e814d7a0-9034-46c5-b768-cfc3f4b60d1d</node_id><space_id>X</space_id><transaction_type>QUERY</transaction_type><message_type>REQUEST</message_type><transaction_id>3</transaction_id><parameter name = "type">sparql</parameter><parameter name = "query">PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt;PREFIX xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;PREFIX ns: &lt;http://smartM3Lab/Ontology.owl#&gt;SELECT ?s ?p WHERE { ?s ?p &quot;oeuau&quot; }</parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY REQUEST
+INFO:tserver:SPARQL QUERY REQUEST handled by handle_sparql_query_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 34661)
+INFO:tserver:<SSAP_message><message_type>CONFIRM</message_type><transaction_type>QUERY</transaction_type><transaction_id>3</transaction_id><space_id>X</space_id><node_id>a145c67f-0d57-49de-b623-3c76dd6253f8-e814d7a0-9034-46c5-b768-cfc3f4b60d1d</node_id><parameter name="status">m3:Success</parameter><parameter name="results"><sparql xmlns="http://www.w3.org/2005/sparql-results#"><head><variable name="s"/><variable name="p"/></head><results></results></sparql></parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY CONFIRM
+INFO:tserver:SPARQL QUERY CONFIRM handled by handle_sparql_query_confirm
+INFO:tserver:Incoming connection from ('127.0.0.1', 50352)
+INFO:tserver:Received the following  message from ('127.0.0.1', 50352)
+INFO:tserver:<SSAP_message><node_id>a145c67f-0d57-49de-b623-3c76dd6253f8-e814d7a0-9034-46c5-b768-cfc3f4b60d1d</node_id><space_id>X</space_id><transaction_type>QUERY</transaction_type><message_type>REQUEST</message_type><transaction_id>4</transaction_id><parameter name = "type">sparql</parameter><parameter name = "query">PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt;PREFIX xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;PREFIX ns: &lt;http://smartM3Lab/Ontology.owl#&gt;SELECT ?s ?p WHERE { ?s ?p oeuau }</parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY REQUEST
+INFO:tserver:SPARQL QUERY REQUEST handled by handle_sparql_query_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 34661)
+INFO:tserver:<SSAP_message><message_type>CONFIRM</message_type><transaction_type>QUERY</transaction_type><transaction_id>4</transaction_id><space_id>X</space_id><node_id>a145c67f-0d57-49de-b623-3c76dd6253f8-e814d7a0-9034-46c5-b768-cfc3f4b60d1d</node_id><parameter name="status">m3:SIB.Error</parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY CONFIRM
+INFO:tserver:RDF QUERY CONFIRM handled by handle_rdf_query_confirm
+ERROR:tserver:RDF QUERY CONFIRM forwarding failed
+INFO:tserver:Incoming connection from ('127.0.0.1', 50355)
+INFO:tserver:Received the following  message from ('127.0.0.1', 50355)
+INFO:tserver:<SSAP_message><node_id>a145c67f-0d57-49de-b623-3c76dd6253f8-e814d7a0-9034-46c5-b768-cfc3f4b60d1d</node_id><space_id>X</space_id><transaction_type>QUERY</transaction_type><message_type>REQUEST</message_type><transaction_id>5</transaction_id><parameter name = "type">sparql</parameter><parameter name = "query">PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt;PREFIX xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;PREFIX ns: &lt;http://smartM3Lab/Ontology.owl#&gt;SELECT ?s ?p ?o WHERE { ?s ?p ?o }</parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY REQUEST
+INFO:tserver:SPARQL QUERY REQUEST handled by handle_sparql_query_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 34661)
+INFO:tserver:<SSAP_message><message_type>CONFIRM</message_type><transaction_type>QUERY</transaction_type><transaction_id>5</transaction_id><space_id>X</space_id><node_id>a145c67f-0d57-49de-b623-3c76dd6253f8-e814d7a0-9034-46c5-b768-cfc3f4b60d1d</node_id><parameter name="status">m3:Success</parameter><parameter name="results"><sparql xmlns="http://www.w3.org/2005/sparql-results#"><head><variable name="s"/><variable name="p"/><variable name="o"/></head><results><result><binding name="s"><uri>1o</uri></binding><binding name="p"><uri>ale</uri></binding><binding name="o"><uri>oeuau</uri></binding></result><result><binding name="s"><uri>1o</uri></binding><binding name="p"><uri>ale</uri></binding><binding name="o"><uri>oeuau1</uri></binding></result><result><binding name="s"><uri>ale</uri></binding><binding name="p"><uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri></binding><binding name="o"><uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#Property</uri></binding></result><result><binding name="s"><uri>foo</uri></binding><binding name="p"><uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri></binding><binding name="o"><uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#Property</uri></binding></result></results></sparql></parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY CONFIRM
+INFO:tserver:SPARQL QUERY CONFIRM handled by handle_sparql_query_confirm
+INFO:tserver:Incoming connection from ('127.0.0.1', 50359)
+INFO:tserver:Received the following  message from ('127.0.0.1', 50359)
+INFO:tserver:<SSAP_message><node_id>a145c67f-0d57-49de-b623-3c76dd6253f8-e814d7a0-9034-46c5-b768-cfc3f4b60d1d</node_id><space_id>X</space_id><transaction_type>QUERY</transaction_type><message_type>REQUEST</message_type><transaction_id>6</transaction_id><parameter name = "type">sparql</parameter><parameter name = "query">PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt;PREFIX xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;PREFIX ns: &lt;http://smartM3Lab/Ontology.owl#&gt;SELECT ?s ?p WHERE { ?s ?p &quot;ale&quot; }</parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY REQUEST
+INFO:tserver:SPARQL QUERY REQUEST handled by handle_sparql_query_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 34661)
+INFO:tserver:<SSAP_message><message_type>CONFIRM</message_type><transaction_type>QUERY</transaction_type><transaction_id>6</transaction_id><space_id>X</space_id><node_id>a145c67f-0d57-49de-b623-3c76dd6253f8-e814d7a0-9034-46c5-b768-cfc3f4b60d1d</node_id><parameter name="status">m3:Success</parameter><parameter name="results"><sparql xmlns="http://www.w3.org/2005/sparql-results#"><head><variable name="s"/><variable name="p"/></head><results></results></sparql></parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY CONFIRM
+INFO:tserver:SPARQL QUERY CONFIRM handled by handle_sparql_query_confirm
+INFO:tserver:Incoming connection from ('127.0.0.1', 50361)
+INFO:tserver:Received the following  message from ('127.0.0.1', 50361)
+INFO:tserver:<SSAP_message><node_id>a145c67f-0d57-49de-b623-3c76dd6253f8-e814d7a0-9034-46c5-b768-cfc3f4b60d1d</node_id><space_id>X</space_id><transaction_type>QUERY</transaction_type><message_type>REQUEST</message_type><transaction_id>7</transaction_id><parameter name = "type">sparql</parameter><parameter name = "query">PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt;PREFIX xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;PREFIX ns: &lt;http://smartM3Lab/Ontology.owl#&gt;SELECT ?s ?p WHERE { ?s ?p &apos;ale&apos; }</parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY REQUEST
+INFO:tserver:SPARQL QUERY REQUEST handled by handle_sparql_query_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 34661)
+INFO:tserver:<SSAP_message><message_type>CONFIRM</message_type><transaction_type>QUERY</transaction_type><transaction_id>7</transaction_id><space_id>X</space_id><node_id>a145c67f-0d57-49de-b623-3c76dd6253f8-e814d7a0-9034-46c5-b768-cfc3f4b60d1d</node_id><parameter name="status">m3:Success</parameter><parameter name="results"><sparql xmlns="http://www.w3.org/2005/sparql-results#"><head><variable name="s"/><variable name="p"/></head><results></results></sparql></parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY CONFIRM
+INFO:tserver:SPARQL QUERY CONFIRM handled by handle_sparql_query_confirm
+INFO:tserver:Incoming connection from ('127.0.0.1', 50363)
+INFO:tserver:Received the following  message from ('127.0.0.1', 50363)
+INFO:tserver:<SSAP_message><node_id>a145c67f-0d57-49de-b623-3c76dd6253f8-e814d7a0-9034-46c5-b768-cfc3f4b60d1d</node_id><space_id>X</space_id><transaction_type>QUERY</transaction_type><message_type>REQUEST</message_type><transaction_id>8</transaction_id><parameter name = "type">sparql</parameter><parameter name = "query">PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt;PREFIX xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;PREFIX ns: &lt;http://smartM3Lab/Ontology.owl#&gt;SELECT ?s ?p WHERE { ?s ?p u&apos;ale&apos; }</parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY REQUEST
+INFO:tserver:SPARQL QUERY REQUEST handled by handle_sparql_query_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 34661)
+INFO:tserver:<SSAP_message><message_type>CONFIRM</message_type><transaction_type>QUERY</transaction_type><transaction_id>8</transaction_id><space_id>X</space_id><node_id>a145c67f-0d57-49de-b623-3c76dd6253f8-e814d7a0-9034-46c5-b768-cfc3f4b60d1d</node_id><parameter name="status">m3:SIB.Error</parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY CONFIRM
+INFO:tserver:RDF QUERY CONFIRM handled by handle_rdf_query_confirm
+ERROR:tserver:RDF QUERY CONFIRM forwarding failed
+INFO:tserver:Incoming connection from ('127.0.0.1', 50368)
+INFO:tserver:Received the following  message from ('127.0.0.1', 50368)
+INFO:tserver:<SSAP_message><message_type>REQUEST</message_type><transaction_type>INSERT</transaction_type><transaction_id>17</transaction_id><node_id>e9b7fc69-9402-4806-b3b1-c4b534225f6c</node_id><space_id>X</space_id><parameter name="confirm">TRUE</parameter><parameter name="insert_graph"  encoding="RDF-M3"><triple_list> <triple>  <subject type="uri">Fabio</subject>  <predicate>hasType</predicate>  <object type="uri">Person</object> </triple></triple_list></parameter></SSAP_message>
+INFO:tserver:Message identified as a INSERT REQUEST
+INFO:tserver:INSERT REQUEST handled by handle_insert_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 34661)
+INFO:tserver:<SSAP_message><message_type>CONFIRM</message_type><transaction_type>INSERT</transaction_type><transaction_id>17</transaction_id><space_id>X</space_id><node_id>e9b7fc69-9402-4806-b3b1-c4b534225f6c</node_id><parameter name="status">m3:Success</parameter><parameter name="bnodes"><urilist></urilist></parameter></SSAP_message>
+INFO:tserver:Message identified as a INSERT CONFIRM
+INFO:tserver:INSERT CONFIRM handled by handle_insert_confirm
+INFO:tserver:Incoming connection from ('127.0.0.1', 50370)
+INFO:tserver:Received the following  message from ('127.0.0.1', 50370)
+INFO:tserver:<SSAP_message><transaction_type>QUERY</transaction_type><message_type>REQUEST</message_type><transaction_id>18</transaction_id><node_id>e9b7fc69-9402-4806-b3b1-c4b534225f6c</node_id><space_id>X</space_id><parameter name = "type">sparql</parameter><parameter name = "query">SELECT ?s ?p ?o WHERE {?s ?p ?o}</parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY REQUEST
+INFO:tserver:SPARQL QUERY REQUEST handled by handle_sparql_query_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 34661)
+INFO:tserver:<SSAP_message><message_type>CONFIRM</message_type><transaction_type>QUERY</transaction_type><transaction_id>18</transaction_id><space_id>X</space_id><node_id>e9b7fc69-9402-4806-b3b1-c4b534225f6c</node_id><parameter name="status">m3:Success</parameter><parameter name="results"><sparql xmlns="http://www.w3.org/2005/sparql-results#"><head><variable name="s"/><variable name="p"/><variable name="o"/></head><results><result><binding name="s"><uri>1o</uri></binding><binding name="p"><uri>ale</uri></binding><binding name="o"><uri>oeuau</uri></binding></result><result><binding name="s"><uri>1o</uri></binding><binding name="p"><uri>ale</uri></binding><binding name="o"><uri>oeuau1</uri></binding></result><result><binding name="s"><uri>ale</uri></binding><binding name="p"><uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri></binding><binding name="o"><uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#Property</uri></binding></result><result><binding name="s"><uri>foo</uri></binding><binding name="p"><uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri></binding><binding name="o"><uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#Property</uri></binding></result><result><binding name="s"><uri>Fabio</uri></binding><binding name="p"><uri>hasType</uri></binding><binding name="o"><uri>Person</uri></binding></result><result><binding name="s"><uri>hasType</uri></binding><binding name="p"><uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri></binding><binding name="o"><uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#Property</uri></binding></result></results></sparql></parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY CONFIRM
+INFO:tserver:SPARQL QUERY CONFIRM handled by handle_sparql_query_confirm
+INFO:tserver:Incoming connection from ('127.0.0.1', 50372)
+INFO:tserver:Received the following  message from ('127.0.0.1', 50372)
+INFO:tserver:<SSAP_message><transaction_type>QUERY</transaction_type><message_type>REQUEST</message_type><transaction_id>19</transaction_id><node_id>e9b7fc69-9402-4806-b3b1-c4b534225f6c</node_id><space_id>X</space_id><parameter name = "type">sparql</parameter><parameter name = "query">SELECT ?s ?p WHERE {?s ?p Person}</parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY REQUEST
+INFO:tserver:SPARQL QUERY REQUEST handled by handle_sparql_query_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 34661)
+INFO:tserver:<SSAP_message><message_type>CONFIRM</message_type><transaction_type>QUERY</transaction_type><transaction_id>19</transaction_id><space_id>X</space_id><node_id>e9b7fc69-9402-4806-b3b1-c4b534225f6c</node_id><parameter name="status">m3:SIB.Error</parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY CONFIRM
+INFO:tserver:RDF QUERY CONFIRM handled by handle_rdf_query_confirm
+ERROR:tserver:RDF QUERY CONFIRM forwarding failed
+INFO:tserver:Incoming connection from ('127.0.0.1', 50375)
+INFO:tserver:Received the following  message from ('127.0.0.1', 50375)
+INFO:tserver:<SSAP_message><transaction_type>QUERY</transaction_type><message_type>REQUEST</message_type><transaction_id>20</transaction_id><node_id>e9b7fc69-9402-4806-b3b1-c4b534225f6c</node_id><space_id>X</space_id><parameter name = "type">sparql</parameter><parameter name = "query">SELECT ?s ?p ?o WHERE {?s ?p ?o}</parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY REQUEST
+INFO:tserver:SPARQL QUERY REQUEST handled by handle_sparql_query_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 34661)
+INFO:tserver:<SSAP_message><message_type>CONFIRM</message_type><transaction_type>QUERY</transaction_type><transaction_id>20</transaction_id><space_id>X</space_id><node_id>e9b7fc69-9402-4806-b3b1-c4b534225f6c</node_id><parameter name="status">m3:Success</parameter><parameter name="results"><sparql xmlns="http://www.w3.org/2005/sparql-results#"><head><variable name="s"/><variable name="p"/><variable name="o"/></head><results><result><binding name="s"><uri>1o</uri></binding><binding name="p"><uri>ale</uri></binding><binding name="o"><uri>oeuau</uri></binding></result><result><binding name="s"><uri>1o</uri></binding><binding name="p"><uri>ale</uri></binding><binding name="o"><uri>oeuau1</uri></binding></result><result><binding name="s"><uri>ale</uri></binding><binding name="p"><uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri></binding><binding name="o"><uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#Property</uri></binding></result><result><binding name="s"><uri>foo</uri></binding><binding name="p"><uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri></binding><binding name="o"><uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#Property</uri></binding></result><result><binding name="s"><uri>Fabio</uri></binding><binding name="p"><uri>hasType</uri></binding><binding name="o"><uri>Person</uri></binding></result><result><binding name="s"><uri>hasType</uri></binding><binding name="p"><uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri></binding><binding name="o"><uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#Property</uri></binding></result></results></sparql></parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY CONFIRM
+INFO:tserver:SPARQL QUERY CONFIRM handled by handle_sparql_query_confirm
+INFO:tserver:Incoming connection from ('127.0.0.1', 50377)
+INFO:tserver:Received the following  message from ('127.0.0.1', 50377)
+INFO:tserver:<SSAP_message><transaction_type>QUERY</transaction_type><message_type>REQUEST</message_type><transaction_id>21</transaction_id><node_id>e9b7fc69-9402-4806-b3b1-c4b534225f6c</node_id><space_id>X</space_id><parameter name = "type">sparql</parameter><parameter name = "query">SELECT ?s ?p WHERE {?s ?p http://www.w3.org/1999/02/22-rdf-syntax-ns#Property}</parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY REQUEST
+INFO:tserver:SPARQL QUERY REQUEST handled by handle_sparql_query_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 34661)
+INFO:tserver:<SSAP_message><message_type>CONFIRM</message_type><transaction_type>QUERY</transaction_type><transaction_id>21</transaction_id><space_id>X</space_id><node_id>e9b7fc69-9402-4806-b3b1-c4b534225f6c</node_id><parameter name="status">m3:SIB.Error</parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY CONFIRM
+INFO:tserver:RDF QUERY CONFIRM handled by handle_rdf_query_confirm
+ERROR:tserver:RDF QUERY CONFIRM forwarding failed
+INFO:tserver:Incoming connection from ('127.0.0.1', 50379)
+INFO:tserver:Received the following  message from ('127.0.0.1', 50379)
+INFO:tserver:<SSAP_message><transaction_type>QUERY</transaction_type><message_type>REQUEST</message_type><transaction_id>22</transaction_id><node_id>e9b7fc69-9402-4806-b3b1-c4b534225f6c</node_id><space_id>X</space_id><parameter name = "type">sparql</parameter><parameter name = "query">SELECT ?s ?p WHERE {?s ?p http://www.w3.org/1999/02/22-rdf-syntax-ns#Property}</parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY REQUEST
+INFO:tserver:SPARQL QUERY REQUEST handled by handle_sparql_query_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 34661)
+INFO:tserver:<SSAP_message><message_type>CONFIRM</message_type><transaction_type>QUERY</transaction_type><transaction_id>22</transaction_id><space_id>X</space_id><node_id>e9b7fc69-9402-4806-b3b1-c4b534225f6c</node_id><parameter name="status">m3:SIB.Error</parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY CONFIRM
+INFO:tserver:RDF QUERY CONFIRM handled by handle_rdf_query_confirm
+ERROR:tserver:RDF QUERY CONFIRM forwarding failed
+INFO:tserver:Incoming connection from ('127.0.0.1', 50506)
+INFO:tserver:Received the following  message from ('127.0.0.1', 50506)
+INFO:tserver:<SSAP_message><transaction_type>QUERY</transaction_type><message_type>REQUEST</message_type><transaction_id>1</transaction_id><node_id>ac5ca422-2645-4a16-8c6d-c4b64b9a0340</node_id><space_id>X</space_id><parameter name = "type">sparql</parameter><parameter name = "query">SELECT ?s ?p ?o WHERE { ?s ?p ?o }</parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY REQUEST
+INFO:tserver:SPARQL QUERY REQUEST handled by handle_sparql_query_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 34661)
+INFO:tserver:<SSAP_message><message_type>CONFIRM</message_type><transaction_type>QUERY</transaction_type><transaction_id>1</transaction_id><space_id>X</space_id><node_id>ac5ca422-2645-4a16-8c6d-c4b64b9a0340</node_id><parameter name="status">m3:Success</parameter><parameter name="results"><sparql xmlns="http://www.w3.org/2005/sparql-results#"><head><variable name="s"/><variable name="p"/><variable name="o"/></head><results><result><binding name="s"><uri>1o</uri></binding><binding name="p"><uri>ale</uri></binding><binding name="o"><uri>oeuau</uri></binding></result><result><binding name="s"><uri>1o</uri></binding><binding name="p"><uri>ale</uri></binding><binding name="o"><uri>oeuau1</uri></binding></result><result><binding name="s"><uri>ale</uri></binding><binding name="p"><uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri></binding><binding name="o"><uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#Property</uri></binding></result><result><binding name="s"><uri>foo</uri></binding><binding name="p"><uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri></binding><binding name="o"><uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#Property</uri></binding></result><result><binding name="s"><uri>Fabio</uri></binding><binding name="p"><uri>hasType</uri></binding><binding name="o"><uri>Person</uri></binding></result><result><binding name="s"><uri>hasType</uri></binding><binding name="p"><uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri></binding><binding name="o"><uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#Property</uri></binding></result></results></sparql></parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY CONFIRM
+INFO:tserver:SPARQL QUERY CONFIRM handled by handle_sparql_query_confirm
+INFO:tserver:Incoming connection from ('127.0.0.1', 50508)
+INFO:tserver:Received the following  message from ('127.0.0.1', 50508)
+INFO:tserver:<SSAP_message><transaction_type>QUERY</transaction_type><message_type>REQUEST</message_type><transaction_id>2</transaction_id><node_id>ac5ca422-2645-4a16-8c6d-c4b64b9a0340</node_id><space_id>X</space_id><parameter name = "type">sparql</parameter><parameter name = "query">SELECT ?p ?o WHERE { &apos;1o&apos; ?p ?o }</parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY REQUEST
+INFO:tserver:SPARQL QUERY REQUEST handled by handle_sparql_query_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 34661)
+INFO:tserver:<SSAP_message><message_type>CONFIRM</message_type><transaction_type>QUERY</transaction_type><transaction_id>2</transaction_id><space_id>X</space_id><node_id>ac5ca422-2645-4a16-8c6d-c4b64b9a0340</node_id><parameter name="status">m3:Success</parameter><parameter name="results"><sparql xmlns="http://www.w3.org/2005/sparql-results#"><head><variable name="p"/><variable name="o"/></head><results></results></sparql></parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY CONFIRM
+INFO:tserver:SPARQL QUERY CONFIRM handled by handle_sparql_query_confirm
+INFO:tserver:Incoming connection from ('127.0.0.1', 50510)
+INFO:tserver:Received the following  message from ('127.0.0.1', 50510)
+INFO:tserver:<SSAP_message><transaction_type>QUERY</transaction_type><message_type>REQUEST</message_type><transaction_id>3</transaction_id><node_id>ac5ca422-2645-4a16-8c6d-c4b64b9a0340</node_id><space_id>X</space_id><parameter name = "type">sparql</parameter><parameter name = "query">SELECT ?p ?o WHERE { 1o ?p ?o }</parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY REQUEST
+INFO:tserver:SPARQL QUERY REQUEST handled by handle_sparql_query_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 34661)
+INFO:tserver:<SSAP_message><message_type>CONFIRM</message_type><transaction_type>QUERY</transaction_type><transaction_id>3</transaction_id><space_id>X</space_id><node_id>ac5ca422-2645-4a16-8c6d-c4b64b9a0340</node_id><parameter name="status">m3:SIB.Error</parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY CONFIRM
+INFO:tserver:RDF QUERY CONFIRM handled by handle_rdf_query_confirm
+ERROR:tserver:RDF QUERY CONFIRM forwarding failed
+INFO:tserver:Incoming connection from ('127.0.0.1', 50512)
+INFO:tserver:Received the following  message from ('127.0.0.1', 50512)
+INFO:tserver:<SSAP_message><transaction_type>QUERY</transaction_type><message_type>REQUEST</message_type><transaction_id>4</transaction_id><node_id>ac5ca422-2645-4a16-8c6d-c4b64b9a0340</node_id><space_id>X</space_id><parameter name = "type">sparql</parameter><parameter name = "query">SELECT ?p ?o WHERE { &quot;1o&quot; ?p ?o }</parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY REQUEST
+INFO:tserver:SPARQL QUERY REQUEST handled by handle_sparql_query_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 34661)
+INFO:tserver:<SSAP_message><message_type>CONFIRM</message_type><transaction_type>QUERY</transaction_type><transaction_id>4</transaction_id><space_id>X</space_id><node_id>ac5ca422-2645-4a16-8c6d-c4b64b9a0340</node_id><parameter name="status">m3:Success</parameter><parameter name="results"><sparql xmlns="http://www.w3.org/2005/sparql-results#"><head><variable name="p"/><variable name="o"/></head><results></results></sparql></parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY CONFIRM
+INFO:tserver:SPARQL QUERY CONFIRM handled by handle_sparql_query_confirm
+INFO:tserver:Incoming connection from ('127.0.0.1', 50514)
+INFO:tserver:Received the following  message from ('127.0.0.1', 50514)
+INFO:tserver:<SSAP_message><transaction_type>QUERY</transaction_type><message_type>REQUEST</message_type><transaction_id>5</transaction_id><node_id>ac5ca422-2645-4a16-8c6d-c4b64b9a0340</node_id><space_id>X</space_id><parameter name = "type">sparql</parameter><parameter name = "query">SELECT ?p ?o WHERE { &quot;1o&quot; ?p ?o }</parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY REQUEST
+INFO:tserver:SPARQL QUERY REQUEST handled by handle_sparql_query_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 34661)
+INFO:tserver:<SSAP_message><message_type>CONFIRM</message_type><transaction_type>QUERY</transaction_type><transaction_id>5</transaction_id><space_id>X</space_id><node_id>ac5ca422-2645-4a16-8c6d-c4b64b9a0340</node_id><parameter name="status">m3:Success</parameter><parameter name="results"><sparql xmlns="http://www.w3.org/2005/sparql-results#"><head><variable name="p"/><variable name="o"/></head><results></results></sparql></parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY CONFIRM
+INFO:tserver:SPARQL QUERY CONFIRM handled by handle_sparql_query_confirm
+INFO:tserver:Incoming connection from ('127.0.0.1', 50516)
+INFO:tserver:Received the following  message from ('127.0.0.1', 50516)
+INFO:tserver:<SSAP_message><transaction_type>QUERY</transaction_type><message_type>REQUEST</message_type><transaction_id>6</transaction_id><node_id>ac5ca422-2645-4a16-8c6d-c4b64b9a0340</node_id><space_id>X</space_id><parameter name = "type">sparql</parameter><parameter name = "query">SELECT ?p ?o WHERE { &quot;1o&quot; ?p ?o }</parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY REQUEST
+INFO:tserver:SPARQL QUERY REQUEST handled by handle_sparql_query_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 34661)
+INFO:tserver:<SSAP_message><message_type>CONFIRM</message_type><transaction_type>QUERY</transaction_type><transaction_id>6</transaction_id><space_id>X</space_id><node_id>ac5ca422-2645-4a16-8c6d-c4b64b9a0340</node_id><parameter name="status">m3:Success</parameter><parameter name="results"><sparql xmlns="http://www.w3.org/2005/sparql-results#"><head><variable name="p"/><variable name="o"/></head><results></results></sparql></parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY CONFIRM
+INFO:tserver:SPARQL QUERY CONFIRM handled by handle_sparql_query_confirm
+INFO:tserver:Incoming connection from ('127.0.0.1', 50518)
+INFO:tserver:Received the following  message from ('127.0.0.1', 50518)
+INFO:tserver:<SSAP_message><transaction_type>QUERY</transaction_type><message_type>REQUEST</message_type><transaction_id>7</transaction_id><node_id>ac5ca422-2645-4a16-8c6d-c4b64b9a0340</node_id><space_id>X</space_id><parameter name = "type">sparql</parameter><parameter name = "query">SELECT ?p ?o WHERE { &quot;1o&quot; ?p ?o }</parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY REQUEST
+INFO:tserver:SPARQL QUERY REQUEST handled by handle_sparql_query_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 34661)
+INFO:tserver:<SSAP_message><message_type>CONFIRM</message_type><transaction_type>QUERY</transaction_type><transaction_id>7</transaction_id><space_id>X</space_id><node_id>ac5ca422-2645-4a16-8c6d-c4b64b9a0340</node_id><parameter name="status">m3:Success</parameter><parameter name="results"><sparql xmlns="http://www.w3.org/2005/sparql-results#"><head><variable name="p"/><variable name="o"/></head><results></results></sparql></parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY CONFIRM
+INFO:tserver:SPARQL QUERY CONFIRM handled by handle_sparql_query_confirm
+INFO:tserver:Incoming connection from ('127.0.0.1', 50520)
+INFO:tserver:Received the following  message from ('127.0.0.1', 50520)
+INFO:tserver:<SSAP_message><message_type>REQUEST</message_type><transaction_type>LEAVE</transaction_type><transaction_id>8</transaction_id><node_id>ac5ca422-2645-4a16-8c6d-c4b64b9a0340</node_id><space_id>X</space_id></SSAP_message>
+INFO:tserver:Message identified as a LEAVE REQUEST
+INFO:tserver:LEAVE REQUEST handled by handle_leave_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 34661)
+INFO:tserver:<SSAP_message><message_type>CONFIRM</message_type><transaction_type>LEAVE</transaction_type><transaction_id>8</transaction_id><space_id>X</space_id><node_id>ac5ca422-2645-4a16-8c6d-c4b64b9a0340</node_id><parameter name="status">m3:Success</parameter></SSAP_message>
+INFO:tserver:Message identified as a LEAVE CONFIRM
+INFO:tserver:LEAVE CONFIRM handled by handle_leave_confirm
+INFO:tserver:Incoming connection from ('127.0.0.1', 50522)
+INFO:tserver:Received the following  message from ('127.0.0.1', 50522)
+INFO:tserver:<SSAP_message><message_type>REQUEST</message_type><transaction_type>JOIN</transaction_type><transaction_id>9</transaction_id><node_id>ac5ca422-2645-4a16-8c6d-c4b64b9a0340</node_id><space_id>X</space_id></SSAP_message>
+INFO:tserver:Message identified as a JOIN REQUEST
+INFO:tserver:JOIN REQUEST handled by handle_join_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 34661)
+INFO:tserver:<SSAP_message><message_type>CONFIRM</message_type><transaction_type>JOIN</transaction_type><transaction_id>9</transaction_id><space_id>X</space_id><node_id>ac5ca422-2645-4a16-8c6d-c4b64b9a0340</node_id><parameter name="status">m3:Success</parameter></SSAP_message>
+INFO:tserver:Message identified as a JOIN CONFIRM
+INFO:tserver:JOIN CONFIRM handled by handle_join_confirm
+INFO:tserver:Incoming connection from ('127.0.0.1', 50524)
+INFO:tserver:Received the following  message from ('127.0.0.1', 50524)
+INFO:tserver:<SSAP_message><transaction_type>QUERY</transaction_type><message_type>REQUEST</message_type><transaction_id>10</transaction_id><node_id>ac5ca422-2645-4a16-8c6d-c4b64b9a0340</node_id><space_id>X</space_id><parameter name = "type">sparql</parameter><parameter name = "query">SELECT ?p ?o WHERE { &quot;1o&quot; ?p ?o }</parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY REQUEST
+INFO:tserver:SPARQL QUERY REQUEST handled by handle_sparql_query_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 34661)
+INFO:tserver:<SSAP_message><message_type>CONFIRM</message_type><transaction_type>QUERY</transaction_type><transaction_id>10</transaction_id><space_id>X</space_id><node_id>ac5ca422-2645-4a16-8c6d-c4b64b9a0340</node_id><parameter name="status">m3:Success</parameter><parameter name="results"><sparql xmlns="http://www.w3.org/2005/sparql-results#"><head><variable name="p"/><variable name="o"/></head><results></results></sparql></parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY CONFIRM
+INFO:tserver:SPARQL QUERY CONFIRM handled by handle_sparql_query_confirm
+INFO:tserver:Incoming connection from ('127.0.0.1', 50526)
+INFO:tserver:Received the following  message from ('127.0.0.1', 50526)
+INFO:tserver:<SSAP_message><transaction_type>QUERY</transaction_type><message_type>REQUEST</message_type><transaction_id>11</transaction_id><node_id>ac5ca422-2645-4a16-8c6d-c4b64b9a0340</node_id><space_id>X</space_id><parameter name = "type">RDF-M3</parameter><parameter name = "query"><triple_list><triple>        <subject   type="URI">http://www.nokia.com/NRC/M3/sib#any</subject>        <predicate>http://www.nokia.com/NRC/M3/sib#any</predicate>        <object    type="URI">http://www.nokia.com/NRC/M3/sib#any</object></triple></triple_list></parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY REQUEST
+INFO:tserver:RDF QUERY REQUEST handled by handle_rdf_query_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 34661)
+INFO:tserver:<SSAP_message><message_type>CONFIRM</message_type><transaction_type>QUERY</transaction_type><transaction_id>11</transaction_id><space_id>X</space_id><node_id>ac5ca422-2645-4a16-8c6d-c4b64b9a0340</node_id><parameter name="status">m3:Success</parameter><parameter name="results"><triple_list><triple><subject type="uri">hasType</subject><predicate>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</predicate><object type="uri">http://www.w3.org/1999/02/22-rdf-syntax-ns#Property</object></triple><triple><subject type="uri">Fabio</subject><predicate>hasType</predicate><object type="uri">Person</object></triple><triple><subject type="uri">foo</subject><predicate>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</predicate><object type="uri">http://www.w3.org/1999/02/22-rdf-syntax-ns#Property</object></triple><triple><subject type="uri">ale</subject><predicate>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</predicate><object type="uri">http://www.w3.org/1999/02/22-rdf-syntax-ns#Property</object></triple><triple><subject type="uri">1o</subject><predicate>ale</predicate><object type="uri">oeuau1</object></triple><triple><subject type="uri">1o</subject><predicate>ale</predicate><object type="uri">oeuau</object></triple></triple_list></parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY CONFIRM
+INFO:tserver:RDF QUERY CONFIRM handled by handle_rdf_query_confirm
+INFO:tserver:Incoming connection from ('127.0.0.1', 50528)
+INFO:tserver:Received the following  message from ('127.0.0.1', 50528)
+INFO:tserver:<SSAP_message><transaction_type>QUERY</transaction_type><message_type>REQUEST</message_type><transaction_id>12</transaction_id><node_id>ac5ca422-2645-4a16-8c6d-c4b64b9a0340</node_id><space_id>X</space_id><parameter name = "type">sparql</parameter><parameter name = "query">SELECT ?p ?o WHERE { S:[1o] ?p ?o }</parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY REQUEST
+INFO:tserver:SPARQL QUERY REQUEST handled by handle_sparql_query_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 34661)
+INFO:tserver:<SSAP_message><message_type>CONFIRM</message_type><transaction_type>QUERY</transaction_type><transaction_id>12</transaction_id><space_id>X</space_id><node_id>ac5ca422-2645-4a16-8c6d-c4b64b9a0340</node_id><parameter name="status">m3:SIB.Error</parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY CONFIRM
+INFO:tserver:RDF QUERY CONFIRM handled by handle_rdf_query_confirm
+ERROR:tserver:RDF QUERY CONFIRM forwarding failed
+INFO:tserver:Incoming connection from ('127.0.0.1', 50530)
+INFO:tserver:Received the following  message from ('127.0.0.1', 50530)
+INFO:tserver:<SSAP_message><transaction_type>QUERY</transaction_type><message_type>REQUEST</message_type><transaction_id>13</transaction_id><node_id>ac5ca422-2645-4a16-8c6d-c4b64b9a0340</node_id><space_id>X</space_id><parameter name = "type">sparql</parameter><parameter name = "query">SELECT ?p ?o WHERE { [1o] ?p ?o }</parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY REQUEST
+INFO:tserver:SPARQL QUERY REQUEST handled by handle_sparql_query_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 34661)
+INFO:tserver:<SSAP_message><message_type>CONFIRM</message_type><transaction_type>QUERY</transaction_type><transaction_id>13</transaction_id><space_id>X</space_id><node_id>ac5ca422-2645-4a16-8c6d-c4b64b9a0340</node_id><parameter name="status">m3:SIB.Error</parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY CONFIRM
+INFO:tserver:RDF QUERY CONFIRM handled by handle_rdf_query_confirm
+ERROR:tserver:RDF QUERY CONFIRM forwarding failed
+INFO:tserver:Incoming connection from ('127.0.0.1', 50532)
+INFO:tserver:Received the following  message from ('127.0.0.1', 50532)
+INFO:tserver:<SSAP_message><transaction_type>QUERY</transaction_type><message_type>REQUEST</message_type><transaction_id>14</transaction_id><node_id>ac5ca422-2645-4a16-8c6d-c4b64b9a0340</node_id><space_id>X</space_id><parameter name = "type">sparql</parameter><parameter name = "query">SELECT ?p ?o WHERE { [1o] ?p ?o }</parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY REQUEST
+INFO:tserver:SPARQL QUERY REQUEST handled by handle_sparql_query_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 34661)
+INFO:tserver:<SSAP_message><message_type>CONFIRM</message_type><transaction_type>QUERY</transaction_type><transaction_id>14</transaction_id><space_id>X</space_id><node_id>ac5ca422-2645-4a16-8c6d-c4b64b9a0340</node_id><parameter name="status">m3:SIB.Error</parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY CONFIRM
+INFO:tserver:RDF QUERY CONFIRM handled by handle_rdf_query_confirm
+ERROR:tserver:RDF QUERY CONFIRM forwarding failed
+INFO:tserver:Incoming connection from ('127.0.0.1', 50542)
+INFO:tserver:Received the following  message from ('127.0.0.1', 50542)
+INFO:tserver:<SSAP_message><node_id>ec4d6094-f380-43b4-85fa-d8e3c64a4386-e80ddaf9-00cf-4136-9d0c-cb31cdbebc41</node_id><space_id>X</space_id><transaction_type>JOIN</transaction_type><message_type>REQUEST</message_type><transaction_id>1</transaction_id><parameter name = "credentials">XYZZY</parameter></SSAP_message>
+INFO:tserver:Message identified as a JOIN REQUEST
+INFO:tserver:JOIN REQUEST handled by handle_join_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 34661)
+INFO:tserver:<SSAP_message><message_type>CONFIRM</message_type><transaction_type>JOIN</transaction_type><transaction_id>1</transaction_id><space_id>X</space_id><node_id>ec4d6094-f380-43b4-85fa-d8e3c64a4386-e80ddaf9-00cf-4136-9d0c-cb31cdbebc41</node_id><parameter name="status">m3:Success</parameter></SSAP_message>
+INFO:tserver:Message identified as a JOIN CONFIRM
+INFO:tserver:JOIN CONFIRM handled by handle_join_confirm
+INFO:tserver:Incoming connection from ('127.0.0.1', 50547)
+INFO:tserver:Received the following  message from ('127.0.0.1', 50547)
+INFO:tserver:<SSAP_message><node_id>ec4d6094-f380-43b4-85fa-d8e3c64a4386-e80ddaf9-00cf-4136-9d0c-cb31cdbebc41</node_id><space_id>X</space_id><transaction_type>INSERT</transaction_type><message_type>REQUEST</message_type><transaction_id>2</transaction_id><parameter name = "insert_graph" encoding = "RDF-M3"><triple_list><triple><subject type = "URI">http://test.org/onto#Fabio</subject><predicate>http://test.org/onto#Is</predicate><object type = "URI">http://test.org/onto#Persona</object></triple></triple_list></parameter><parameter name = "confirm">TRUE</parameter></SSAP_message>
+INFO:tserver:Message identified as a INSERT REQUEST
+INFO:tserver:INSERT REQUEST handled by handle_insert_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 34661)
+INFO:tserver:<SSAP_message><message_type>CONFIRM</message_type><transaction_type>INSERT</transaction_type><transaction_id>2</transaction_id><space_id>X</space_id><node_id>ec4d6094-f380-43b4-85fa-d8e3c64a4386-e80ddaf9-00cf-4136-9d0c-cb31cdbebc41</node_id><parameter name="status">m3:Success</parameter><parameter name="bnodes"><urilist></urilist></parameter></SSAP_message>
+INFO:tserver:Message identified as a INSERT CONFIRM
+INFO:tserver:INSERT CONFIRM handled by handle_insert_confirm
+INFO:tserver:Incoming connection from ('127.0.0.1', 50551)
+INFO:tserver:Received the following  message from ('127.0.0.1', 50551)
+INFO:tserver:<SSAP_message><transaction_type>QUERY</transaction_type><message_type>REQUEST</message_type><transaction_id>15</transaction_id><node_id>ac5ca422-2645-4a16-8c6d-c4b64b9a0340</node_id><space_id>X</space_id><parameter name = "type">sparql</parameter><parameter name = "query">SELECT ?s ?p ?o WHERE { ?s ?p ?o }</parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY REQUEST
+INFO:tserver:SPARQL QUERY REQUEST handled by handle_sparql_query_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 34661)
+INFO:tserver:<SSAP_message><message_type>CONFIRM</message_type><transaction_type>QUERY</transaction_type><transaction_id>15</transaction_id><space_id>X</space_id><node_id>ac5ca422-2645-4a16-8c6d-c4b64b9a0340</node_id><parameter name="status">m3:Success</parameter><parameter name="results"><sparql xmlns="http://www.w3.org/2005/sparql-results#"><head><variable name="s"/><variable name="p"/><variable name="o"/></head><results><result><binding name="s"><uri>1o</uri></binding><binding name="p"><uri>ale</uri></binding><binding name="o"><uri>oeuau</uri></binding></result><result><binding name="s"><uri>1o</uri></binding><binding name="p"><uri>ale</uri></binding><binding name="o"><uri>oeuau1</uri></binding></result><result><binding name="s"><uri>ale</uri></binding><binding name="p"><uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri></binding><binding name="o"><uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#Property</uri></binding></result><result><binding name="s"><uri>foo</uri></binding><binding name="p"><uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri></binding><binding name="o"><uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#Property</uri></binding></result><result><binding name="s"><uri>Fabio</uri></binding><binding name="p"><uri>hasType</uri></binding><binding name="o"><uri>Person</uri></binding></result><result><binding name="s"><uri>hasType</uri></binding><binding name="p"><uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri></binding><binding name="o"><uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#Property</uri></binding></result><result><binding name="s"><uri>http://test.org/onto#Is</uri></binding><binding name="p"><uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri></binding><binding name="o"><uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#Property</uri></binding></result><result><binding name="s"><uri>http://test.org/onto#Fabio</uri></binding><binding name="p"><uri>http://test.org/onto#Is</uri></binding><binding name="o"><uri>http://test.org/onto#Persona</uri></binding></result></results></sparql></parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY CONFIRM
+INFO:tserver:SPARQL QUERY CONFIRM handled by handle_sparql_query_confirm
+INFO:tserver:Incoming connection from ('127.0.0.1', 50553)
+INFO:tserver:Received the following  message from ('127.0.0.1', 50553)
+INFO:tserver:<SSAP_message><transaction_type>QUERY</transaction_type><message_type>REQUEST</message_type><transaction_id>16</transaction_id><node_id>ac5ca422-2645-4a16-8c6d-c4b64b9a0340</node_id><space_id>X</space_id><parameter name = "type">sparql</parameter><parameter name = "query">SELECT ?s ?p WHERE { ?s ?p \&apos;Person\&apos; }</parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY REQUEST
+INFO:tserver:SPARQL QUERY REQUEST handled by handle_sparql_query_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 34661)
+INFO:tserver:<SSAP_message><message_type>CONFIRM</message_type><transaction_type>QUERY</transaction_type><transaction_id>16</transaction_id><space_id>X</space_id><node_id>ac5ca422-2645-4a16-8c6d-c4b64b9a0340</node_id><parameter name="status">m3:SIB.Error</parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY CONFIRM
+INFO:tserver:RDF QUERY CONFIRM handled by handle_rdf_query_confirm
+ERROR:tserver:RDF QUERY CONFIRM forwarding failed
+INFO:tserver:Incoming connection from ('127.0.0.1', 50555)
+INFO:tserver:Received the following  message from ('127.0.0.1', 50555)
+INFO:tserver:<SSAP_message><node_id>ec4d6094-f380-43b4-85fa-d8e3c64a4386-e80ddaf9-00cf-4136-9d0c-cb31cdbebc41</node_id><space_id>X</space_id><transaction_type>QUERY</transaction_type><message_type>REQUEST</message_type><transaction_id>3</transaction_id><parameter name = "type">sparql</parameter><parameter name = "query">PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt;PREFIX xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;PREFIX ns: &lt;http://smartM3Lab/Ontology.owl#&gt;SELECT ?s ?p ?o WHERE { ?s ?p ?o}</parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY REQUEST
+INFO:tserver:SPARQL QUERY REQUEST handled by handle_sparql_query_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 34661)
+INFO:tserver:<SSAP_message><message_type>CONFIRM</message_type><transaction_type>QUERY</transaction_type><transaction_id>3</transaction_id><space_id>X</space_id><node_id>ec4d6094-f380-43b4-85fa-d8e3c64a4386-e80ddaf9-00cf-4136-9d0c-cb31cdbebc41</node_id><parameter name="status">m3:Success</parameter><parameter name="results"><sparql xmlns="http://www.w3.org/2005/sparql-results#"><head><variable name="s"/><variable name="p"/><variable name="o"/></head><results><result><binding name="s"><uri>1o</uri></binding><binding name="p"><uri>ale</uri></binding><binding name="o"><uri>oeuau</uri></binding></result><result><binding name="s"><uri>1o</uri></binding><binding name="p"><uri>ale</uri></binding><binding name="o"><uri>oeuau1</uri></binding></result><result><binding name="s"><uri>ale</uri></binding><binding name="p"><uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri></binding><binding name="o"><uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#Property</uri></binding></result><result><binding name="s"><uri>foo</uri></binding><binding name="p"><uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri></binding><binding name="o"><uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#Property</uri></binding></result><result><binding name="s"><uri>Fabio</uri></binding><binding name="p"><uri>hasType</uri></binding><binding name="o"><uri>Person</uri></binding></result><result><binding name="s"><uri>hasType</uri></binding><binding name="p"><uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri></binding><binding name="o"><uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#Property</uri></binding></result><result><binding name="s"><uri>http://test.org/onto#Is</uri></binding><binding name="p"><uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri></binding><binding name="o"><uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#Property</uri></binding></result><result><binding name="s"><uri>http://test.org/onto#Fabio</uri></binding><binding name="p"><uri>http://test.org/onto#Is</uri></binding><binding name="o"><uri>http://test.org/onto#Persona</uri></binding></result></results></sparql></parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY CONFIRM
+INFO:tserver:SPARQL QUERY CONFIRM handled by handle_sparql_query_confirm
+INFO:tserver:Incoming connection from ('127.0.0.1', 50558)
+INFO:tserver:Received the following  message from ('127.0.0.1', 50558)
+INFO:tserver:<SSAP_message><node_id>ec4d6094-f380-43b4-85fa-d8e3c64a4386-e80ddaf9-00cf-4136-9d0c-cb31cdbebc41</node_id><space_id>X</space_id><transaction_type>QUERY</transaction_type><message_type>REQUEST</message_type><transaction_id>4</transaction_id><parameter name = "type">sparql</parameter><parameter name = "query">PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt;PREFIX xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;PREFIX ns: &lt;http://smartM3Lab/Ontology.owl#&gt;SELECT ?s ?p ?o WHERE { ?s ?p &apos;ale&apos; }</parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY REQUEST
+INFO:tserver:SPARQL QUERY REQUEST handled by handle_sparql_query_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 34661)
+INFO:tserver:<SSAP_message><message_type>CONFIRM</message_type><transaction_type>QUERY</transaction_type><transaction_id>4</transaction_id><space_id>X</space_id><node_id>ec4d6094-f380-43b4-85fa-d8e3c64a4386-e80ddaf9-00cf-4136-9d0c-cb31cdbebc41</node_id><parameter name="status">m3:Success</parameter><parameter name="results"><sparql xmlns="http://www.w3.org/2005/sparql-results#"><head><variable name="s"/><variable name="p"/><variable name="o"/></head><results></results></sparql></parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY CONFIRM
+INFO:tserver:SPARQL QUERY CONFIRM handled by handle_sparql_query_confirm
+INFO:tserver:Incoming connection from ('127.0.0.1', 50561)
+INFO:tserver:Received the following  message from ('127.0.0.1', 50561)
+INFO:tserver:<SSAP_message><node_id>ec4d6094-f380-43b4-85fa-d8e3c64a4386-e80ddaf9-00cf-4136-9d0c-cb31cdbebc41</node_id><space_id>X</space_id><transaction_type>QUERY</transaction_type><message_type>REQUEST</message_type><transaction_id>5</transaction_id><parameter name = "type">sparql</parameter><parameter name = "query">PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt;PREFIX xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;PREFIX ns: &lt;http://smartM3Lab/Ontology.owl#&gt;SELECT ?s ?p ?o WHERE { ?s ?p &apos;ale&apos; }</parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY REQUEST
+INFO:tserver:SPARQL QUERY REQUEST handled by handle_sparql_query_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 34661)
+INFO:tserver:<SSAP_message><message_type>CONFIRM</message_type><transaction_type>QUERY</transaction_type><transaction_id>5</transaction_id><space_id>X</space_id><node_id>ec4d6094-f380-43b4-85fa-d8e3c64a4386-e80ddaf9-00cf-4136-9d0c-cb31cdbebc41</node_id><parameter name="status">m3:Success</parameter><parameter name="results"><sparql xmlns="http://www.w3.org/2005/sparql-results#"><head><variable name="s"/><variable name="p"/><variable name="o"/></head><results></results></sparql></parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY CONFIRM
+INFO:tserver:SPARQL QUERY CONFIRM handled by handle_sparql_query_confirm
+INFO:tserver:Incoming connection from ('127.0.0.1', 50563)
+INFO:tserver:Received the following  message from ('127.0.0.1', 50563)
+INFO:tserver:<SSAP_message><node_id>ec4d6094-f380-43b4-85fa-d8e3c64a4386-e80ddaf9-00cf-4136-9d0c-cb31cdbebc41</node_id><space_id>X</space_id><transaction_type>QUERY</transaction_type><message_type>REQUEST</message_type><transaction_id>6</transaction_id><parameter name = "type">sparql</parameter><parameter name = "query">PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt;PREFIX xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;PREFIX ns: &lt;http://smartM3Lab/Ontology.owl#&gt;SELECT ?s ?p WHERE { ?s ?p &apos;ale&apos; }</parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY REQUEST
+INFO:tserver:SPARQL QUERY REQUEST handled by handle_sparql_query_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 34661)
+INFO:tserver:<SSAP_message><message_type>CONFIRM</message_type><transaction_type>QUERY</transaction_type><transaction_id>6</transaction_id><space_id>X</space_id><node_id>ec4d6094-f380-43b4-85fa-d8e3c64a4386-e80ddaf9-00cf-4136-9d0c-cb31cdbebc41</node_id><parameter name="status">m3:Success</parameter><parameter name="results"><sparql xmlns="http://www.w3.org/2005/sparql-results#"><head><variable name="s"/><variable name="p"/></head><results></results></sparql></parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY CONFIRM
+INFO:tserver:SPARQL QUERY CONFIRM handled by handle_sparql_query_confirm
+INFO:tserver:Incoming connection from ('127.0.0.1', 50565)
+INFO:tserver:Received the following  message from ('127.0.0.1', 50565)
+INFO:tserver:<SSAP_message><node_id>ec4d6094-f380-43b4-85fa-d8e3c64a4386-e80ddaf9-00cf-4136-9d0c-cb31cdbebc41</node_id><space_id>X</space_id><transaction_type>QUERY</transaction_type><message_type>REQUEST</message_type><transaction_id>7</transaction_id><parameter name = "type">sparql</parameter><parameter name = "query">PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt;PREFIX xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;PREFIX ns: &lt;http://smartM3Lab/Ontology.owl#&gt;SELECT ?s ?p WHERE { ?s ?p &apos;ale&apos; }</parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY REQUEST
+INFO:tserver:SPARQL QUERY REQUEST handled by handle_sparql_query_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 34661)
+INFO:tserver:<SSAP_message><message_type>CONFIRM</message_type><transaction_type>QUERY</transaction_type><transaction_id>7</transaction_id><space_id>X</space_id><node_id>ec4d6094-f380-43b4-85fa-d8e3c64a4386-e80ddaf9-00cf-4136-9d0c-cb31cdbebc41</node_id><parameter name="status">m3:Success</parameter><parameter name="results"><sparql xmlns="http://www.w3.org/2005/sparql-results#"><head><variable name="s"/><variable name="p"/></head><results></results></sparql></parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY CONFIRM
+INFO:tserver:SPARQL QUERY CONFIRM handled by handle_sparql_query_confirm
+INFO:tserver:Incoming connection from ('127.0.0.1', 50567)
+INFO:tserver:Received the following  message from ('127.0.0.1', 50567)
+INFO:tserver:<SSAP_message><node_id>ec4d6094-f380-43b4-85fa-d8e3c64a4386-e80ddaf9-00cf-4136-9d0c-cb31cdbebc41</node_id><space_id>X</space_id><transaction_type>QUERY</transaction_type><message_type>REQUEST</message_type><transaction_id>8</transaction_id><parameter name = "type">sparql</parameter><parameter name = "query">PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt;PREFIX xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;PREFIX ns: &lt;http://smartM3Lab/Ontology.owl#&gt;SELECT ?s ?p ?o WHERE { ?s ?p ?o}</parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY REQUEST
+INFO:tserver:SPARQL QUERY REQUEST handled by handle_sparql_query_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 34661)
+INFO:tserver:<SSAP_message><message_type>CONFIRM</message_type><transaction_type>QUERY</transaction_type><transaction_id>8</transaction_id><space_id>X</space_id><node_id>ec4d6094-f380-43b4-85fa-d8e3c64a4386-e80ddaf9-00cf-4136-9d0c-cb31cdbebc41</node_id><parameter name="status">m3:Success</parameter><parameter name="results"><sparql xmlns="http://www.w3.org/2005/sparql-results#"><head><variable name="s"/><variable name="p"/><variable name="o"/></head><results><result><binding name="s"><uri>1o</uri></binding><binding name="p"><uri>ale</uri></binding><binding name="o"><uri>oeuau</uri></binding></result><result><binding name="s"><uri>1o</uri></binding><binding name="p"><uri>ale</uri></binding><binding name="o"><uri>oeuau1</uri></binding></result><result><binding name="s"><uri>ale</uri></binding><binding name="p"><uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri></binding><binding name="o"><uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#Property</uri></binding></result><result><binding name="s"><uri>foo</uri></binding><binding name="p"><uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri></binding><binding name="o"><uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#Property</uri></binding></result><result><binding name="s"><uri>Fabio</uri></binding><binding name="p"><uri>hasType</uri></binding><binding name="o"><uri>Person</uri></binding></result><result><binding name="s"><uri>hasType</uri></binding><binding name="p"><uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri></binding><binding name="o"><uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#Property</uri></binding></result><result><binding name="s"><uri>http://test.org/onto#Is</uri></binding><binding name="p"><uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</uri></binding><binding name="o"><uri>http://www.w3.org/1999/02/22-rdf-syntax-ns#Property</uri></binding></result><result><binding name="s"><uri>http://test.org/onto#Fabio</uri></binding><binding name="p"><uri>http://test.org/onto#Is</uri></binding><binding name="o"><uri>http://test.org/onto#Persona</uri></binding></result></results></sparql></parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY CONFIRM
+INFO:tserver:SPARQL QUERY CONFIRM handled by handle_sparql_query_confirm
+INFO:tserver:Incoming connection from ('127.0.0.1', 50569)
+INFO:tserver:Received the following  message from ('127.0.0.1', 50569)
+INFO:tserver:<SSAP_message><node_id>ec4d6094-f380-43b4-85fa-d8e3c64a4386-e80ddaf9-00cf-4136-9d0c-cb31cdbebc41</node_id><space_id>X</space_id><transaction_type>QUERY</transaction_type><message_type>REQUEST</message_type><transaction_id>9</transaction_id><parameter name = "type">sparql</parameter><parameter name = "query">PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt;PREFIX xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;PREFIX ns: &lt;http://smartM3Lab/Ontology.owl#&gt;SELECT ?s ?o WHERE { ?s &apos;ale&apos; ?o }</parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY REQUEST
+INFO:tserver:SPARQL QUERY REQUEST handled by handle_sparql_query_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 34661)
+INFO:tserver:<SSAP_message><message_type>CONFIRM</message_type><transaction_type>QUERY</transaction_type><transaction_id>9</transaction_id><space_id>X</space_id><node_id>ec4d6094-f380-43b4-85fa-d8e3c64a4386-e80ddaf9-00cf-4136-9d0c-cb31cdbebc41</node_id><parameter name="status">m3:SIB.Error</parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY CONFIRM
+INFO:tserver:RDF QUERY CONFIRM handled by handle_rdf_query_confirm
+ERROR:tserver:RDF QUERY CONFIRM forwarding failed
+INFO:tserver:Incoming connection from ('127.0.0.1', 50572)
+INFO:tserver:Received the following  message from ('127.0.0.1', 50572)
+INFO:tserver:<SSAP_message><node_id>ec4d6094-f380-43b4-85fa-d8e3c64a4386-e80ddaf9-00cf-4136-9d0c-cb31cdbebc41</node_id><space_id>X</space_id><transaction_type>QUERY</transaction_type><message_type>REQUEST</message_type><transaction_id>10</transaction_id><parameter name = "type">sparql</parameter><parameter name = "query">PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt;PREFIX xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;PREFIX ns: &lt;http://smartM3Lab/Ontology.owl#&gt;SELECT ?s ?o WHERE { ?s &apos;ale&apos; ?o }</parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY REQUEST
+INFO:tserver:SPARQL QUERY REQUEST handled by handle_sparql_query_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 34661)
+INFO:tserver:<SSAP_message><message_type>CONFIRM</message_type><transaction_type>QUERY</transaction_type><transaction_id>10</transaction_id><space_id>X</space_id><node_id>ec4d6094-f380-43b4-85fa-d8e3c64a4386-e80ddaf9-00cf-4136-9d0c-cb31cdbebc41</node_id><parameter name="status">m3:SIB.Error</parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY CONFIRM
+INFO:tserver:RDF QUERY CONFIRM handled by handle_rdf_query_confirm
+ERROR:tserver:RDF QUERY CONFIRM forwarding failed
+INFO:tserver:Incoming connection from ('127.0.0.1', 50574)
+INFO:tserver:Received the following  message from ('127.0.0.1', 50574)
+INFO:tserver:<SSAP_message><node_id>ec4d6094-f380-43b4-85fa-d8e3c64a4386-e80ddaf9-00cf-4136-9d0c-cb31cdbebc41</node_id><space_id>X</space_id><transaction_type>QUERY</transaction_type><message_type>REQUEST</message_type><transaction_id>11</transaction_id><parameter name = "type">sparql</parameter><parameter name = "query">PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt;PREFIX xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;PREFIX ns: &lt;http://smartM3Lab/Ontology.owl#&gt;SELECT ?s ?p WHERE { ?s ?p http://test.org/onto#Fabio }</parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY REQUEST
+INFO:tserver:SPARQL QUERY REQUEST handled by handle_sparql_query_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 34661)
+INFO:tserver:<SSAP_message><message_type>CONFIRM</message_type><transaction_type>QUERY</transaction_type><transaction_id>11</transaction_id><space_id>X</space_id><node_id>ec4d6094-f380-43b4-85fa-d8e3c64a4386-e80ddaf9-00cf-4136-9d0c-cb31cdbebc41</node_id><parameter name="status">m3:SIB.Error</parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY CONFIRM
+INFO:tserver:RDF QUERY CONFIRM handled by handle_rdf_query_confirm
+ERROR:tserver:RDF QUERY CONFIRM forwarding failed
+INFO:tserver:Incoming connection from ('127.0.0.1', 50576)
+INFO:tserver:Received the following  message from ('127.0.0.1', 50576)
+INFO:tserver:<SSAP_message><node_id>ec4d6094-f380-43b4-85fa-d8e3c64a4386-e80ddaf9-00cf-4136-9d0c-cb31cdbebc41</node_id><space_id>X</space_id><transaction_type>QUERY</transaction_type><message_type>REQUEST</message_type><transaction_id>12</transaction_id><parameter name = "type">sparql</parameter><parameter name = "query">PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt;PREFIX xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;PREFIX ns: &lt;http://smartM3Lab/Ontology.owl#&gt;SELECT ?s ?p WHERE { ?s ?p &apos;http://test.org/onto#Fabio&apos; }</parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY REQUEST
+INFO:tserver:SPARQL QUERY REQUEST handled by handle_sparql_query_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 34661)
+INFO:tserver:<SSAP_message><message_type>CONFIRM</message_type><transaction_type>QUERY</transaction_type><transaction_id>12</transaction_id><space_id>X</space_id><node_id>ec4d6094-f380-43b4-85fa-d8e3c64a4386-e80ddaf9-00cf-4136-9d0c-cb31cdbebc41</node_id><parameter name="status">m3:Success</parameter><parameter name="results"><sparql xmlns="http://www.w3.org/2005/sparql-results#"><head><variable name="s"/><variable name="p"/></head><results></results></sparql></parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY CONFIRM
+INFO:tserver:SPARQL QUERY CONFIRM handled by handle_sparql_query_confirm
+INFO:tserver:Incoming connection from ('127.0.0.1', 50578)
+INFO:tserver:Received the following  message from ('127.0.0.1', 50578)
+INFO:tserver:<SSAP_message><node_id>ec4d6094-f380-43b4-85fa-d8e3c64a4386-e80ddaf9-00cf-4136-9d0c-cb31cdbebc41</node_id><space_id>X</space_id><transaction_type>QUERY</transaction_type><message_type>REQUEST</message_type><transaction_id>13</transaction_id><parameter name = "type">sparql</parameter><parameter name = "query">PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt;PREFIX xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;PREFIX ns: &lt;http://smartM3Lab/Ontology.owl#&gt;ns = &quot;http://test.org/onto#&quot;SELECT ?s ?p WHERE { ?s ?p ns:Fabio }</parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY REQUEST
+INFO:tserver:SPARQL QUERY REQUEST handled by handle_sparql_query_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 34661)
+INFO:tserver:<SSAP_message><message_type>CONFIRM</message_type><transaction_type>QUERY</transaction_type><transaction_id>13</transaction_id><space_id>X</space_id><node_id>ec4d6094-f380-43b4-85fa-d8e3c64a4386-e80ddaf9-00cf-4136-9d0c-cb31cdbebc41</node_id><parameter name="status">m3:SIB.Error</parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY CONFIRM
+INFO:tserver:RDF QUERY CONFIRM handled by handle_rdf_query_confirm
+ERROR:tserver:RDF QUERY CONFIRM forwarding failed
+INFO:tserver:Incoming connection from ('127.0.0.1', 50608)
+INFO:tserver:Received the following  message from ('127.0.0.1', 50608)
+INFO:tserver:<SSAP_message><node_id>ec4d6094-f380-43b4-85fa-d8e3c64a4386-e80ddaf9-00cf-4136-9d0c-cb31cdbebc41</node_id><space_id>X</space_id><transaction_type>QUERY</transaction_type><message_type>REQUEST</message_type><transaction_id>14</transaction_id><parameter name = "type">sparql</parameter><parameter name = "query">PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt;PREFIX xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;PREFIX ns: &lt;http://smartM3Lab/Ontology.owl#&gt;PREFIX ns: &lt;http://test.org/onto#&gt;SELECT ?p ?o WHERE { ns:Fabio ?p ?o }</parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY REQUEST
+INFO:tserver:SPARQL QUERY REQUEST handled by handle_sparql_query_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 34661)
+INFO:tserver:<SSAP_message><message_type>CONFIRM</message_type><transaction_type>QUERY</transaction_type><transaction_id>14</transaction_id><space_id>X</space_id><node_id>ec4d6094-f380-43b4-85fa-d8e3c64a4386-e80ddaf9-00cf-4136-9d0c-cb31cdbebc41</node_id><parameter name="status">m3:Success</parameter><parameter name="results"><sparql xmlns="http://www.w3.org/2005/sparql-results#"><head><variable name="p"/><variable name="o"/></head><results></results></sparql></parameter></SSAP_message>
+INFO:tserver:Message identified as a QUERY CONFIRM
+INFO:tserver:SPARQL QUERY CONFIRM handled by handle_sparql_query_confirm

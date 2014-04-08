@@ -1,0 +1,33 @@
+\frametitle{Publisher}
+
+How does he inform the Virtual SIB about its presence? With a SSAP
+message that we defined:
+
+\begin{center}
+\scriptsize
+\begin{verbatim}
+<SSAP_message>
+<node_id>a49d259b-e26d-40b4-a169-af1befe367cf-03cc02f9-dc7d-4462-974d-0a9d88b86416</node_id>
+<space_id>X</space_id>
+<transaction_type>REGISTER</transaction_type>
+<message_type>REQUEST</message_type>
+<transaction_id>?</transaction_id>
+</SSAP_message>
+\end{verbatim}
+\end{center}
+
+The virtual SIB replies with the following message:
+
+\begin{center}
+\scriptsize
+\begin{verbatim}
+<SSAP_message>
+<node_id>a49d259b-e26d-40b4-a169-af1befe367cf-03cc02f9-dc7d-4462-974d-0a9d88b86416</node_id>
+<space_id>X</space_id>
+<transaction_type>REGISTER</transaction_type>
+<message_type>CONFIRM</message_type>
+<transaction_id>?</transaction_id>
+</SSAP_message>
+\end{verbatim}
+\end{center}
+

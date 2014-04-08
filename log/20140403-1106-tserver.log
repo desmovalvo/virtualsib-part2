@@ -1,0 +1,25 @@
+INFO:tserver:Server waiting for KPs on port 10010
+INFO:tserver:Server waiting for publishers on port 10011
+INFO:tserver:Incoming connection from ('127.0.0.1', 53385)
+INFO:tserver:Received the following  message from ('127.0.0.1', 53385)
+INFO:tserver:<SSAP_message><node_id>ee11adef-c4df-449f-8702-be5d9fc560f4</node_id><space_id>X</space_id><transaction_type>REGISTER</transaction_type><message_type>REQUEST</message_type><transaction_id>6</transaction_id></SSAP_message>
+INFO:tserver:Message identified as a REGISTER REQUEST
+INFO:tserver:REGISTER REQUEST handled by handle_register_request
+INFO:tserver:Incoming connection from ('127.0.0.1', 49184)
+INFO:tserver:Received the following  message from ('127.0.0.1', 49184)
+INFO:tserver:<SSAP_message><node_id>d96252d3-91c8-46e0-8865-aa631cf508e5-e162be21-761d-4547-963a-9e2fd0823982</node_id><space_id>X</space_id><transaction_type>INSERT</transaction_type><message_type>REQUEST</message_type><transaction_id>22</transaction_id><parameter name = "insert_graph" encoding = "RDF-M3"><triple_list><triple><subject type = "URI">112341oxk2aaa1aaa1</subject><predicate>oaIorOIOafaooa</predicate><object type = "URI">1234234KKo3aa</object></triple></triple_list></parameter><parameter name = "confirm">TRUE</parameter></SSAP_message>
+INFO:tserver:Message identified as a INSERT REQUEST
+INFO:tserver:INSERT REQUEST handled by handle_insert_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 53385)
+INFO:tserver:<SSAP_message><message_type>CONFIRM</message_type><transaction_type>INSERT</transaction_type><transaction_id>22</transaction_id><space_id>X</space_id><node_id>d96252d3-91c8-46e0-8865-aa631cf508e5-e162be21-761d-4547-963a-9e2fd0823982</node_id><parameter name="status">m3:Success</parameter><parameter name="bnodes"><urilist></urilist></parameter></SSAP_message>
+INFO:tserver:Message identified as a INSERT CONFIRM
+INFO:tserver:INSERT CONFIRM handled by handle_insert_confirm
+INFO:tserver:Incoming connection from ('127.0.0.1', 49186)
+INFO:tserver:Received the following  message from ('127.0.0.1', 49186)
+INFO:tserver:<SSAP_message><node_id>d96252d3-91c8-46e0-8865-aa631cf508e5-e162be21-761d-4547-963a-9e2fd0823982</node_id><space_id>X</space_id><transaction_type>INSERT</transaction_type><message_type>REQUEST</message_type><transaction_id>23</transaction_id><parameter name = "insert_graph" encoding = "RDF-M3"><triple_list><triple><subject type = "URI">11234oeu1</subject><predicate>oaIorOIOafaooa</predicate><object type = "URI">1234234KKo3aa</object></triple></triple_list></parameter><parameter name = "confirm">TRUE</parameter></SSAP_message>
+INFO:tserver:Message identified as a INSERT REQUEST
+INFO:tserver:INSERT REQUEST handled by handle_insert_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 53385)
+INFO:tserver:<SSAP_message><message_type>CONFIRM</message_type><transaction_type>INSERT</transaction_type><transaction_id>23</transaction_id><space_id>X</space_id><node_id>d96252d3-91c8-46e0-8865-aa631cf508e5-e162be21-761d-4547-963a-9e2fd0823982</node_id><parameter name="status">m3:Success</parameter><parameter name="bnodes"><urilist></urilist></parameter></SSAP_message>
+INFO:tserver:Message identified as a INSERT CONFIRM
+INFO:tserver:INSERT CONFIRM handled by handle_insert_confirm

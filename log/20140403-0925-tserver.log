@@ -1,0 +1,39 @@
+INFO:tserver:Server waiting for KPs on port 10010
+INFO:tserver:Server waiting for publishers on port 10011
+INFO:tserver:Incoming connection from ('127.0.0.1', 52767)
+INFO:tserver:Received the following  message from ('127.0.0.1', 52767)
+INFO:tserver:<SSAP_message><node_id>139cf859-1a7d-4bd8-9297-07794113521f</node_id><space_id>X</space_id><transaction_type>REGISTER</transaction_type><message_type>REQUEST</message_type><transaction_id>589</transaction_id></SSAP_message>
+INFO:tserver:Message identified as a REGISTER REQUEST
+INFO:tserver:REGISTER REQUEST handled by handle_register_request
+INFO:tserver:Incoming connection from ('127.0.0.1', 48566)
+INFO:tserver:Received the following  message from ('127.0.0.1', 48566)
+INFO:tserver:<SSAP_message><node_id>b5498a0a-7e4a-45c6-a559-c79e6c12aa90-6114e8f8-dd70-4ff8-abb8-080ed73a2ab3</node_id><space_id>X</space_id><transaction_type>JOIN</transaction_type><message_type>REQUEST</message_type><transaction_id>1</transaction_id><parameter name = "credentials">XYZZY</parameter></SSAP_message>
+INFO:tserver:Message identified as a JOIN REQUEST
+INFO:tserver:JOIN REQUEST handled by handle_join_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 52767)
+INFO:tserver:<SSAP_message><message_type>CONFIRM</message_type><transaction_type>JOIN</transaction_type><transaction_id>1</transaction_id><space_id>X</space_id><node_id>b5498a0a-7e4a-45c6-a559-c79e6c12aa90-6114e8f8-dd70-4ff8-abb8-080ed73a2ab3</node_id><parameter name="status">m3:Success</parameter></SSAP_message>
+INFO:tserver:Message identified as a JOIN CONFIRM
+INFO:tserver:JOIN CONFIRM handled by handle_join_confirm
+INFO:tserver:Incoming connection from ('127.0.0.1', 48573)
+INFO:tserver:Received the following  message from ('127.0.0.1', 48573)
+INFO:tserver:<SSAP_message><node_id>980b93c4-d248-4cd8-a17a-3f861e8a83b6-5f12ad43-0250-4eb5-a564-f3ab531d804a</node_id><space_id>X</space_id><transaction_type>JOIN</transaction_type><message_type>REQUEST</message_type><transaction_id>1</transaction_id><parameter name = "credentials">XYZZY</parameter></SSAP_message>
+INFO:tserver:Message identified as a JOIN REQUEST
+INFO:tserver:JOIN REQUEST handled by handle_join_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 52767)
+INFO:tserver:<SSAP_message><message_type>CONFIRM</message_type><transaction_type>JOIN</transaction_type><transaction_id>1</transaction_id><space_id>X</space_id><node_id>980b93c4-d248-4cd8-a17a-3f861e8a83b6-5f12ad43-0250-4eb5-a564-f3ab531d804a</node_id><parameter name="status">m3:Success</parameter></SSAP_message>
+INFO:tserver:Message identified as a JOIN CONFIRM
+INFO:tserver:JOIN CONFIRM handled by handle_join_confirm
+INFO:tserver:Incoming connection from ('127.0.0.1', 48575)
+INFO:tserver:Received the following  message from ('127.0.0.1', 48575)
+INFO:tserver:<SSAP_message><node_id>980b93c4-d248-4cd8-a17a-3f861e8a83b6-5f12ad43-0250-4eb5-a564-f3ab531d804a</node_id><space_id>X</space_id><transaction_type>SUBSCRIBE</transaction_type><message_type>REQUEST</message_type><transaction_id>2</transaction_id><parameter name = "type">RDF-M3</parameter><parameter name = "query"><triple_list><triple><subject type = "URI">1o</subject><predicate>ale</predicate><object type = "URI">http://www.nokia.com/NRC/M3/sib#any</object></triple></triple_list></parameter></SSAP_message>
+INFO:tserver:Message identified as a SUBSCRIBE REQUEST
+INFO:tserver:RDF SUBSCRIBE REQUEST handled by handle_rdf_subscribe_request
+INFO:tserver:Received the following  message from ('127.0.0.1', 52767)
+INFO:tserver:<SSAP_message><message_type>CONFIRM</message_type><transaction_type>SUBSCRIBE</transaction_type><transaction_id>2</transaction_id><space_id>X</space_id><node_id>980b93c4-d248-4cd8-a17a-3f861e8a83b6-5f12ad43-0250-4eb5-a564-f3ab531d804a</node_id><parameter name="status">m3:Success</parameter><parameter name="subscription_id">http://subscribe_graph#980b93c4-d248-4cd8-a17a-3f861e8a83b6-5f12ad43-0250-4eb5-a564-f3ab531d804a_2</parameter><parameter name="results"><triple_list><triple><subject type="uri">1o</subject><predicate>ale</predicate><object type="uri">foo</object></triple><triple><subject type="uri">1o</subject><predicate>ale</predicate><object type="uri">oeuau1</object></triple><triple><subject type="uri">1o</subject><predicate>ale</predicate><object type="uri">oeuau</object></triple></triple_list></parameter></SSAP_message>
+INFO:tserver:Message identified as a SUBSCRIBE CONFIRM
+INFO:tserver:RDF SUBSCRIBE CONFIRM handled by handle_rdf_subscribe_confirm
+INFO:tserver:Incoming connection from ('127.0.0.1', 48579)
+INFO:tserver:Received the following  message from ('127.0.0.1', 48579)
+INFO:tserver:<SSAP_message><node_id>980b93c4-d248-4cd8-a17a-3f861e8a83b6-5f12ad43-0250-4eb5-a564-f3ab531d804a</node_id><space_id>X</space_id><transaction_type>UNSUBSCRIBE</transaction_type><message_type>REQUEST</message_type><transaction_id>3</transaction_id><parameter name = "subscription_id">6330ce98-24aa-4caf-b1b3-64e8cf5e4d36</parameter></SSAP_message>
+INFO:tserver:Message identified as a UNSUBSCRIBE REQUEST
+INFO:tserver:RDF UNSUBSCRIBE REQUEST handled by handle_rdf_unsubscribe_request
