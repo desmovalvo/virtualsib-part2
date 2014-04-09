@@ -7,6 +7,7 @@ from termcolor import *
 import socket, select, string, sys
 from lib.SIBLib import SibLib
 from smart_m3.m3_kp import *
+from publisher3 import *
 
 ancillary_ip = '127.0.0.1'
 ancillary_port = '10088'
@@ -44,7 +45,6 @@ if __name__ == "__main__":
         # real sib information
         owner = sys.argv[1]
         sib_id = str(uuid.uuid4())
-
 
         # socket to the manager process
         manager = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -96,12 +96,16 @@ if __name__ == "__main__":
                     print i
                     print i[2]
                     virtual_sib_ip = str(i[2]).split("-")[0]
-                    virtual_sib_port = str(i[2]).split("-")[1]
+                    virtual_sib_port = int(str(i[2]).split("-")[1])
                     print virtual_sib_ip
                     print virtual_sib_port
+                    
+                    # lancio publisher
+                    StartConnection(virtual_sib_ip, virtual_sib_port, sib_id, a, sub)
+
                 
-                print "Subscription closed!"
-                a.CloseSubscribeTransaction(sub)
+                # print "Subscription closed!"
+                # a.CloseSubscribeTransaction(sub)
                                 
     except KeyboardInterrupt:
-        print colored("Manager> ", "blue", attrs=["bold"]) + "Goodbye!"
+        print colored("Publisher> ", "blue", attrs=["bold"]) + "Goodbye!"

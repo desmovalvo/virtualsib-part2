@@ -5,6 +5,10 @@ from termcolor import *
 import uuid
 from SIBLib import SibLib
 from smart_m3.m3_kp import *
+from virtualiser import *
+import threading
+import thread
+
 
 #functions
 
@@ -15,11 +19,12 @@ def NewRemoteSIB():
     # virtual sib id
     virtual_sib_id = str(uuid.uuid4())
 
-    # TODO - start a virtual sib
-
-    # TODO - insert information in the ancillary SIB
+    # start a virtual sib
+    thread.start_new_thread(virtualiser, ("localhost", 10010, "localhost", 10011))
+    
+    # insert information in the ancillary SIB
     a = SibLib("127.0.0.1", 10088)
-    t = Triple(URI(virtual_sib_id), URI("hasIpPort"), URI("127.0.0.1-10010"))
+    t = Triple(URI(virtual_sib_id), URI("hasIpPort"), URI("127.0.0.1-10011"))
     a.insert(t)
     
 
