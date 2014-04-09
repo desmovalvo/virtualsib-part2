@@ -54,10 +54,10 @@ class ManagerServerHandler(SocketServer.BaseRequestHandler):
 
                             # decode 
                             print colored("Manager> ", "blue", attrs=["bold"]) + "calling the proper method"
-                            globals()[data["command"]]()
+                            virtual_sib_id = globals()[data["command"]]()
                     
                             # send a reply
-                            self.request.sendall(json.dumps({'return':'ok'}))
+                            self.request.sendall(json.dumps({'return':'ok', 'virtual_sib_id':virtual_sib_id}))
                             
                         else:
 
